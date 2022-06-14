@@ -2,14 +2,33 @@
     width: 100%;
     /* border: 1px solid red; */
     height: fit-content;
-    padding: 2vh;    
+     
+      
 }
 .container{
-    width: 1300px;
-  
+    width: 1147px;  
     /* border: 1px solid red; */
     margin: auto;
+    
 }
+
+@media only screen and (min-width: 1252px) and (max-width: 1440px) {
+    .container{
+        width: 1240px;  
+        /* border: 1px solid red; */
+        margin: auto;
+        
+    }
+  }
+
+  @media only screen and (max-width: 1152px)  {
+    .container{
+        width: 1152px;  
+        /* border: 1px solid red; */
+        margin: auto;
+        
+    }
+  }
 
 /* this containers  media querry  tasks pending */
 

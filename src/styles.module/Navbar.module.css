@@ -1,13 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;400&family=Inter&family=Open+Sans:ital@1&family=Roboto:wght@100&family=Sacramento&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;400&family=Inter&family=Open+Sans:ital@1&family=Roboto:wght@100&family=Sacramento&display=swap'); */
+
 .navbar{
     display:flex;
     justify-content:space-between;
     /* border:1px solid red; */
-    width: 1255px;
-    margin-top: 5px;
-
-    position: fixed;
+    width: 1150px;
+    position: sticky;  
+    padding: 1vh;
 }
+
+@media only screen   and (max-width: 1440px) and (min-width: 1152px)  {
+    .navbar{
+        display:flex;
+        justify-content:space-between;
+        /* border:1px solid red; */
+        width: 100%;
+    }
+  }
+
+  /* @media only screen and (min-width: 1440px) {
+    .navbar{
+        display:flex;
+        justify-content:space-between;
+        border:1px solid red;
+        width: 98%;
+    }
+
+    media works pending here
+  } */ 
+
+
 #leftdiv{
     /* border: 1px solid black; */
     width: 65%;
@@ -36,8 +58,27 @@
     font-size: 12px;
     height: fit-content;
     margin-right: 10px;
+    letter-spacing: 0.1px;
 }
 .rightmenuicon{
     width: 16px;
    
+}
+.rightsubcateg{
+    margin: 5px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 12px;
+    height: fit-content;
+    margin-right: -11px;
+    letter-spacing: 0.1px;
+}
+
+/* deopdown starts here  */
+
+.dropdown{
+    width: 100%;
+    border: 1px solid red;
+    position: absolute;
+    width: 1224px;
+    margin: auto;
 }

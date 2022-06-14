@@ -5,7 +5,8 @@ import { Routes,Route } from "react-router-dom";
 import Home from "./pages/Home"
 function App() {
   return (
-    <div className="App" style={{overflowX:"hidden"}}>
+    <div className="App"  >
+      
       <Navbar />
       {/* here routes and route comes here */}
       <br/>
