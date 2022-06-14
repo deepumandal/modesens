@@ -1,16 +1,19 @@
 import React from 'react'
-import style from "../MensPage/Menspage.module.css"
+import {handlegclick,handlecondclick,handlecatclick,categorydrop} from "./functionformens.js"
+import style from '../../styles.module/Menspage.module.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { getcat, getmensAPI } from '../../store/Mens/mensaction'
 import { Mensdropdown } from '../../component/Mensdropdown'
 export const Menspage = () => {
+
     let gender=["Women","Men","Kids"]
     let condition=["All","New","Pre-owned"]
-    
     let [gclick,setGclick]=React.useState(false)
     let [condclick,setCondclick]=React.useState(false)
     let [catclick,setCatclick]=React.useState(false)
     let[categories,setCategories]=React.useState(false)
+
+
     const mensdata=useSelector((state)=>state.mens.mdata)
     const catdata=useSelector((state)=>state.mens.catdata)
     const dispatch=useDispatch()
@@ -19,15 +22,7 @@ export const Menspage = () => {
         dispatch(getmensAPI())
     },[dispatch])
 
-    let handlegclick=()=>{
-        setGclick(!gclick)
-    }
-    let handlecondclick=()=>{
-        setCondclick(!condclick)
-    }
-    let handlecatclick=()=>{
-        setCatclick(!catclick)
-    }
+
     let categorydrop=()=>{
        if(!categories)
        { dispatch(getcat())
@@ -37,7 +32,7 @@ export const Menspage = () => {
         setCategories(!categories)
        }
        
-    }
+     }
   return (
     <div>
         <div>
@@ -52,7 +47,7 @@ export const Menspage = () => {
                         <div>Filter by</div>
                         <div>Reset</div>
                     </div>
-                    <div style={{border:"1px solid red",display:"flex",justifyContent:"felx-start"}}onClick={handlegclick}>Gender:Men </div>
+                    <div style={{border:"1px solid red",display:"flex",justifyContent:"felx-start"}}onClick={()=>handlegclick(gclick,setGclick)}>Gender:Men </div>
                     { gclick && (<div style={{backgroundColor:"white",width:"15%",zIndex:"1",position:"absolute"}}>
                                 { gender.map((el)=>(
                                         <div  style={{textAlign:"start"}}>{el}</div>
@@ -60,7 +55,7 @@ export const Menspage = () => {
                                 </div>)
                     }
                    
-                    <div style={{border:"1px solid red",display:"flex",justifyContent:"felx-start"}} onClick={handlecondclick}>Condition:New</div>
+                    <div style={{border:"1px solid red",display:"flex",justifyContent:"felx-start"}} onClick={()=>handlecondclick(condclick,setCondclick)}>Condition:New</div>
                     { condclick && (<div  style={{backgroundColor:"white",width:"15%",zIndex:"1",position:"absolute"}}>
                                     { condition.map((el)=>(
                                         <div  style={{textAlign:"start"}}>{el}</div>
@@ -68,7 +63,7 @@ export const Menspage = () => {
                                     </div>)
                     }
                     
-                    <div style={{border:"1px solid red",display:"flex",justifyContent:"felx-start"}} onClick={handlecatclick}>Category:Clothing</div>
+                    <div style={{border:"1px solid red",display:"flex",justifyContent:"felx-start"}} onClick={()=>handlecatclick(catclick,setCatclick)}>Category:Clothing</div>
                     { catclick && ( <div  style={{backgroundColor:"white",width:"15%",zIndex:"1",position:"absolute"}}>
                                     <Mensdropdown dropcontent={catdata}/>
                                     </div>)

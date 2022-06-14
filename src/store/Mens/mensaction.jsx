@@ -13,7 +13,7 @@ export const getmensAPI=()=>(dispatch)=>{
 export const getcat=()=>(dispatch)=>{
     axios.get("http://localhost:8080/Navbar/?categoryname=MEN ")
         .then((resp)=>{
-            console.log("resp.data getcat",resp.data[0].subcateg)
+            
             dispatch({type:GET_CATEGORY,payload:resp.data[0].subcateg})
         })
 }
