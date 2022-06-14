@@ -17,8 +17,9 @@ function App() {
       <Routes >
         <Route path="/" element={ <Home /> }  />
         <Route path="/shop-men-clothing" element={<Menspage/>}></Route>
+        <Route path="/offers" element={<Offers/>}></Route>
       </Routes>
-      <Offers/>
+      {/* <Offers/> */}
     </div>
   );
 }
