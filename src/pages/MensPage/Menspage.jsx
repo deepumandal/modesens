@@ -44,29 +44,31 @@ export const Menspage = () => {
         <div style={{border:"1px solid black"}}>hello</div>
         <div className={style.prmaincontainer}>
             <div className={style.prsidebar}>
-               <div>
+               <div >
                     <div style={{display:"flex",justifyContent:"space-between"}}>
                         <div>Filter by</div>
                         <div>Reset</div>
                     </div>
-                    <div style={{border:"1px solid red",display:"flex",justifyContent:"felx-start"}}onClick={()=>handlegclick(gclick,setGclick)}>Gender:Men </div>
-                    { gclick && (<div style={{backgroundColor:"white",width:"15%",zIndex:"1",position:"absolute"}}>
+                   <div style={{marginTop:"10px",marginBottom:"10px"}}>
+                   <div className={style.prcatcondgen}onClick={()=>handlegclick(gclick,setGclick)}>Gender:Men </div>
+                    { gclick && (<div className={style.prdropdown_firstthree}>
                                 { gender.map((el)=>(
                                         <div  style={{textAlign:"start"}}>{el}</div>
                                 ))}
                                 </div>)
                     }
                    
-                    <div style={{border:"1px solid red",display:"flex",justifyContent:"felx-start"}} onClick={()=>handlecondclick(condclick,setCondclick)}>Condition:New</div>
-                    { condclick && (<div  style={{backgroundColor:"white",width:"15%",zIndex:"1",position:"absolute"}}>
+                    <div className={style.prcatcondgen} onClick={()=>handlecondclick(condclick,setCondclick)}>Condition:New</div>
+                    { condclick && (<div  className={style.prdropdown_firstthree}>
                                     { condition.map((el)=>(
                                         <div  style={{textAlign:"start"}}>{el}</div>
                                     ))}
                                     </div>)
                     }
                     
-                    <div style={{border:"1px solid red",display:"flex",justifyContent:"felx-start"}} onClick={()=>handlecatclick(catclick,setCatclick)}>Category:Clothing</div>
-                    { catclick && ( <div  style={{backgroundColor:"white",width:"15%",zIndex:"1",position:"absolute"}}>
+                    <div className={style.prcatcondgen} onClick={()=>handlecatclick(catclick,setCatclick)}>Category:Clothing</div>
+                   </div>
+                    { catclick && ( <div >
                                     <Mensdropdown dropcontent={catdata}/>
                                     </div>)
                     }
