@@ -6,7 +6,7 @@ export const Product = ({el}) => {
   return (
     <div className={style.prindiv}>
                         <div className={style.primgquidiv}>
-                            <div>heart</div>
+                            <div style={{display:"flex",justifyContent:"flex-end",fontSize:"25px"}}><i class="fa-regular fa-heart"></i></div>
                             <img className={style.primg}  src={el.imgsrc}/>
                             <div className={style.prquickdiv}>Quick View</div>
                         </div>

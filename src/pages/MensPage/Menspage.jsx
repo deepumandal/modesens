@@ -37,9 +37,9 @@ export const Menspage = () => {
      }
   return (
     <div>
-        <div>
-            <h1>Designer Clothing for men</h1>
-            <p>Designer clothing for men with price comparison across 500+ stores in one place. Discover the latest designer clothing for men at ModeSens.</p>
+        <div className={style.prdesignerdiv}>
+            <div style={{fontSize:"24px"}}><b>Designer Clothing for men</b></div>
+            <p style={{fontSize:"12px",fontWeight:"500"}}>Designer clothing for men with price comparison across 500+ stores in one place. Discover the latest designer clothing for men at ModeSens.</p>
         </div>
         <div style={{border:"1px solid black"}}>hello</div>
         <div className={style.prmaincontainer}>
@@ -72,55 +72,41 @@ export const Menspage = () => {
                                     <Mensdropdown dropcontent={catdata}/>
                                     </div>)
                     }
-                    <div  style={{border:"1px solid red"}}>Save My Search</div>
+                    <div className={style.prsavemysearch}>Save My Search</div>
                     
-                    <div style={{border:"1px solid red"}}>
+                    <div className={style.prshareandsave}>
                         <div>Share my search</div>
                         <div>My saved Searches</div>
                     </div>
-                    <div onClick={categorydrop}>CATEGORY</div>
+                    <div className={style.prheavyfilters}>
+                        <div onClick={categorydrop}>CATEGORY
                         {categories &&<Mensdropdown dropcontent={catdata}/>}
-                   
-                    <div>DESIGNER</div>
-
-                    <div>SIZE</div>
-
-                    <div>COLOR</div>
-
-                    <div>PRIZE RANGE</div>
-
-                    <div>ON SALE</div>
-
-                    <div>STORE</div>
-
-                    <div>KEYWORD</div>
+                        </div>
+                           
                     
-                
-               </div>
+                        <div>DESIGNER</div>
+
+                        <div>SIZE</div>
+
+                        <div>COLOR</div>
+
+                        <div>PRIZE RANGE</div>
+
+                        <div>ON SALE</div>
+
+                        <div>STORE</div>
+
+                        <div>KEYWORD</div>
+                    </div>
+                </div>
             </div>
            
             <div className={style.prprodcontainer}>
-                
                 {mensdata.map((el)=>(
-                    // <div className={style.prindiv}>
-                    //     <div className={style.primgquidiv}>
-                    //     <img onMouseOver={()=>handlequickview(quickviewstatus,setQuickviewstatus)} style={{height:"80%",width:"50%"}} src={el.imgsrc}/>
-                    //     <div style={{border:"1px solid blue",height:"15%",display: quickviewstatus? "block":"none"}}>Quick View</div>
-                    //     </div>
-                      
-                    //     <div className={style.prindiprop}>
-                    //     <div>{el.brand}</div>
-                    //     <p  style={{width:"100%",display:"inline"}}>{el.description}</p>
-                    //     <div>{el.price}</div>
-                    //     <div>{el.stores}</div>
-                    //     </div>
-                    //     </div>
-                    <Product  el={el}/>
-                     
+                  <Product  el={el}/>
                 ))}
-              
-               
             </div>
+
         </div>
     </div>
   )
