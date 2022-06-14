@@ -1,9 +1,10 @@
 import React from 'react'
-import {handlegclick,handlecondclick,handlecatclick,categorydrop} from "./functionformens.js"
+import {handlegclick,handlecondclick,handlecatclick,categorydrop, handlequickview} from "./functionformens.js"
 import style from '../../styles.module/Menspage.module.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { getcat, getmensAPI } from '../../store/Mens/mensaction'
 import { Mensdropdown } from '../../component/Mensdropdown'
+import { Product } from '../../component/Product.jsx'
 export const Menspage = () => {
 
     let gender=["Women","Men","Kids"]
@@ -12,6 +13,7 @@ export const Menspage = () => {
     let [condclick,setCondclick]=React.useState(false)
     let [catclick,setCatclick]=React.useState(false)
     let[categories,setCategories]=React.useState(false)
+   
 
 
     const mensdata=useSelector((state)=>state.mens.mdata)
@@ -98,15 +100,20 @@ export const Menspage = () => {
             <div className={style.prprodcontainer}>
                 
                 {mensdata.map((el)=>(
-                    <div className={style.prindiv}>
-                        <img style={{height:"50%",width:"50%"}} src={el.imgsrc}/>
-                        <div className={style.prindiprop}>
-                        <div>{el.brand}</div>
-                        <p  style={{width:"100%",display:"inline"}}>{el.description}</p>
-                        <div>{el.price}</div>
-                        <div>{el.stores}</div>
-                        </div>
-                        </div>
+                    // <div className={style.prindiv}>
+                    //     <div className={style.primgquidiv}>
+                    //     <img onMouseOver={()=>handlequickview(quickviewstatus,setQuickviewstatus)} style={{height:"80%",width:"50%"}} src={el.imgsrc}/>
+                    //     <div style={{border:"1px solid blue",height:"15%",display: quickviewstatus? "block":"none"}}>Quick View</div>
+                    //     </div>
+                      
+                    //     <div className={style.prindiprop}>
+                    //     <div>{el.brand}</div>
+                    //     <p  style={{width:"100%",display:"inline"}}>{el.description}</p>
+                    //     <div>{el.price}</div>
+                    //     <div>{el.stores}</div>
+                    //     </div>
+                    //     </div>
+                    <Product  el={el}/>
                      
                 ))}
               
