@@ -1,0 +1,13 @@
+{
+  "Navbar": [
+    { "WOMEN": { "categoryname": "WOMEN" } },
+    { "MEN": { "categoryname": "MEN" } },
+    { "BEAUTY": { "categoryname": "BEAUTY" } },
+    { "KIDS": { "categoryname": "KIDS" } },
+    { "HOME": { "categoryname": "HOME" } },
+    { "OFFERS": { "categoryname": "OFFERS" } },
+    { "DESINERS": { "categoryname": "DESINERS" } },
+    { "COMMUNITY": { "categoryname": "COMMUNITY" } },
+    { "WHY-MODESENS": { "categoryname": "WHY MODESENS" } }
+  ]
+}
