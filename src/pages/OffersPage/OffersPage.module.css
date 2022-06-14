@@ -1,0 +1,12 @@
+.sidInput {
+  outline: 0;
+  border-width: 0 0 2px;
+  margin: auto;
+  width: 30%;
+}
+
+.sidTitle{
+    text-decoration: solid;
+    font-weight: bold;
+    color: black;
+}
