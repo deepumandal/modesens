@@ -9,4 +9,14 @@ export const handlecondclick=(condclick,setCondclick)=>{
 export const handlecatclick=(catclick,setCatclick)=>{
     setCatclick(!catclick)
 }
+export const handlequickview=(quickviewstatus,setQuickviewstatus)=>{
+    if(quickviewstatus)
+    {
+        setQuickviewstatus(quickviewstatus=false)
+    }
+    else{
+        setQuickviewstatus(quickviewstatus=true)
+    }
+    console.log("mouseover")
+}
 

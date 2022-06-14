@@ -21,12 +21,17 @@
 }
 .prindiv
 {  
-    height:450px;
+    height:500px;
     border:1px solid green;
 }
 .prindiprop
-{   height:40%;
-    margin-top: 3%;
+{   height:50%;
+    /* margin-top: 3%; */
   
     line-height: 40px;
+}
+.primgquidiv{
+    height:50%;
+    border:1px solid black;
+    cursor: pointer;
 }
