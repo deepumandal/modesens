@@ -1,20 +1,34 @@
-import React from "react";
+import React, { useEffect } from "react";
 import utility from "../styles.module/utility.module.css";
 import style from "../styles.module/Navbar.module.css";
 import cx from "classnames";
+import { useDispatch , useSelector } from "react-redux";
+import { getnavdataapi } from "../store/Navbar/nav.action";
 
 const Navbar = () => {
-  let Navbar = [
-    "WOMEN",
-    "MEN",
-    "BEAUTY",
-    "KIDS",
-    "HOME",
-    "OFFERS",
-    "DESINERS",
-    "COMMUNITY",
-    "WHY MODESENS",
-  ];
+  // let Navbar = [
+  //   "WOMEN",
+  //   "MEN",
+  //   "BEAUTY",
+  //   "KIDS",
+  //   "HOME",
+  //   "OFFERS",
+  //   "DESINERS",
+  //   "COMMUNITY",
+  //   "WHY MODESENS",
+  // ];
+// navbar api fetch here
+const dispatch = useDispatch()
+const {loading,error, navdata : data} = useSelector((state)=> state.navbar)
+  useEffect(() => {
+    dispatch(
+      getnavdataapi()
+    )
+  }, [])
+  
+
+
+  
   return (
     <div>
       {/* <div ><NavTopbar /></div> */}
@@ -29,11 +43,12 @@ const Navbar = () => {
               />
 
               <div className={cx(utility.flex)}>
-                {Navbar.map((subcateg, index) => (
+                {data.map((Categ, index) => (  // console.log(Categ.sub.categoryname)
                   <div key={index} className={cx(style.subcateg, utility.cursurhover) }>
                     {" "}
-                    {subcateg}{" "}
+                    {Categ.sub.categoryname}{" "}
                   </div>
+                  
                 ))}
               </div>
             </div>
