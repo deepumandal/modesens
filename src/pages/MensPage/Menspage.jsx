@@ -35,7 +35,7 @@ export const Menspage = () => {
                         <div>Filter by</div>
                         <div>Reset</div>
                     </div>
-                    <div style={{display:"flex",justifyContent:"felx-start"}}onClick={handlegclick}>Gender:Men </div>
+                    <div style={{border:"1px solid red",display:"flex",justifyContent:"felx-start"}}onClick={handlegclick}>Gender:Men </div>
                     { gclick && (<div style={{backgroundColor:"white",width:"15%",zIndex:"1",position:"absolute"}}>
                                 <div style={{textAlign:"start"}}>Women</div>
                                 <div style={{textAlign:"start"}}>Men</div>
@@ -43,7 +43,7 @@ export const Menspage = () => {
                                 </div>)
                     }
                    
-                    <div style={{display:"flex",justifyContent:"felx-start"}} onClick={handlecondclick}>Condition:New</div>
+                    <div style={{border:"1px solid red",display:"flex",justifyContent:"felx-start"}} onClick={handlecondclick}>Condition:New</div>
                     { condclick && (<div  style={{backgroundColor:"white",width:"15%",zIndex:"1",position:"absolute"}}>
                                 <div style={{textAlign:"start"}}>All</div>
                                 <div style={{textAlign:"start"}}>New</div>
@@ -51,7 +51,7 @@ export const Menspage = () => {
                                 </div>)
                     }
                     
-                    <div style={{display:"flex",justifyContent:"felx-start"}} onClick={handlecatclick}>Category:Clothing</div>
+                    <div style={{border:"1px solid red",display:"flex",justifyContent:"felx-start"}} onClick={handlecatclick}>Category:Clothing</div>
                     { catclick && (<div  style={{backgroundColor:"white",width:"15%",zIndex:"1",position:"absolute"}}>
                                 <div style={{textAlign:"start"}}>All</div>
                                 <div style={{textAlign:"start"}}>Clothing</div>
@@ -60,7 +60,20 @@ export const Menspage = () => {
                                 <div style={{textAlign:"start"}}>Home</div>
                                 </div>)
                     }
+                    <div  style={{border:"1px solid red"}}>Save My Search</div>
                     
+                    <div style={{border:"1px solid red"}}>
+                        <div>Share my search</div>
+                        <div>My saved Searches</div>
+                    </div>
+                    <div>CATEGORY</div>
+                    <div>DESIGNER</div>
+                    <div>SIZE</div>
+                    <div>COLOR</div>
+                    <div>PRIZE RANGE</div>
+                    <div>ON SALE</div>
+                    <div>STORE</div>
+                    <div>KEYWORD</div>
                     
                 
                </div>
