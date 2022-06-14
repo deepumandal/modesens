@@ -1,0 +1,24 @@
+.containerfulid{
+    width: 100%;
+    /* border: 1px solid red; */
+    height: fit-content;
+    padding: 2vh;    
+}
+.container{
+    width: 1300px;
+  
+    /* border: 1px solid red; */
+    margin: auto;
+}
+
+/* this containers  media querry  tasks pending */
+
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.cursurhover{
+    cursor: pointer;
+}

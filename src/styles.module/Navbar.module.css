@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;400&family=Inter&family=Open+Sans:ital@1&family=Roboto:wght@100&family=Sacramento&display=swap');
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    /* border:1px solid red; */
+    width: 1255px;
+    margin-top: 5px;
+
+    position: fixed;
+}
+#leftdiv{
+    /* border: 1px solid black; */
+    width: 65%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+    flex-direction: flex-start;
+}
+#rightdiv{
+    /* border: 1px solid black; */
+    width: 20%;
+    margin-top: 10px;
+    /* flex-direction: flex-end; */
+    display: flex;
+    justify-content: space-evenly;
+}
+#logo{
+  padding: 5px;
+   width: 20%;
+  
+}
+.subcateg{
+    margin: 5px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 12px;
+    height: fit-content;
+    margin-right: 10px;
+}
+.rightmenuicon{
+    width: 16px;
+   
+}
