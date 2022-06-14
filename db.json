@@ -52,7 +52,53 @@
      } ,
      {
       "id" : 2, 
-       "categoryname": "MEN"
+       "categoryname": "MEN",
+       "subcateg":[{
+        "name": "SHOP ALL",
+        "data":[],
+        "id" :1
+      },{
+        "name": "CLOTHING",
+        "id" :2,
+        "data":[]
+      },{
+        "name": "BAGS",
+        "id" :3,
+        "data":[]
+
+      },{
+        "name": "SHOES",
+        "id" :4,
+        "data":[]
+
+      },{
+        "name": "ACCESSORIES",
+        "id" :5,
+        "data":[]
+
+      },{
+        "name": "GROOMING",
+        "id" :6,
+        "data":[]
+
+      },{
+        "name": "SALE",
+        "id" :7,
+        "data":[]
+
+      },{
+        "name": "PRE-OWNED",
+        "id" :8,
+        "data":[]
+
+      },{
+        "name": "OCASSSSIONS",
+        "id" :9,
+        "data":[]
+
+      }
+      
+    ]
         } ,
      {
       "id" :3 ,
