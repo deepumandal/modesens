@@ -3,6 +3,7 @@ import "./App.css";
 import Navbar from "./component/Navbar";
 import { Routes,Route } from "react-router-dom";
 import Home from "./pages/Home"
+import { Menspage } from "./pages/MensPage/Menspage";
 function App() {
   return (
     <div className="App" style={{overflowX:"hidden"}}>
@@ -13,6 +14,7 @@ function App() {
       <br/>
       <Routes >
         <Route path="/" element={ <Home /> }  />
+        <Route path="/shop-men-clothing" element={<Menspage/>}></Route>
       </Routes>
     </div>
   );
