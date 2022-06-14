@@ -1,0 +1,32 @@
+.prmaincontainer
+{
+    display:flex;
+}
+
+.prsidebar
+{
+    width:20%;
+    height:auto;
+    border:1px solid red;
+    margin-left: 3%;
+}
+
+.prprodcontainer
+{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    width:80%;
+    border:1px solid black;
+   
+}
+.prindiv
+{  
+    height:450px;
+    border:1px solid green;
+}
+.prindiprop
+{   height:40%;
+    margin-top: 3%;
+  
+    line-height: 40px;
+}
