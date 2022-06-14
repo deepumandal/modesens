@@ -1,137 +1,333 @@
 {
   "Navbar": [
-    { 
+    {
       "id": 1,
       "categoryname": "WOMEN",
-      "subcateg":[{
-        "name": "SHOP ALL",
-        "data":[],
-        "id" :1
-      },{
-        "name": "CLOTHING",
-        "id" :2,
-        "data":[]
-      },{
-        "name": "BAGS",
-        "id" :3,
-        "data":[]
+      "subcateg": [
+        {
+          "name": "SHOP ALL",
+          "data": [],
+          "id": 1
+        },
+        {
+          "name": "CLOTHING",
+          "id": 2,
+          "data": [
+            { "id": 1,
+               "title": "SHOP BY CATEGORY",
+                "items": [
+                  "NEW ARRIVALS",
+                   "ALL CLOTHING", 
+                   "BEACHWEAR", 
+                   "TOPS", 
+                   "JEANS" , 
+                   "PANTS" ,
+                   "SHORTS",
+                   "COATS",
+                   "JACKETS",
+                   "KNITWEAR",
+                   "SUITS",
+                   "UNDERWEAR & SOCKS",
+                   "LOUNGEWEAR",
+                   "SALE"
+                   ] },
+            { "id": 1,
+               "title": "SHOP BY LIST",
+                "items": [
+                  "LUXURT T-SHIRTS",
+                  "TOP TANKS TOPS",
+                  "PRINTED BUTTON DOWNS",
+                  "SHORT SHORTS",
+                  "FEELING TRANSPARENT",
+                  "DENIM DAZE",
+                  "VESTED INTEREST"
 
-      },{
-        "name": "SHOES",
-        "id" :4,
-        "data":[]
-
-      },{
-        "name": "ACCESSORIES",
-        "id" :5,
-        "data":[]
-
-      },{
-        "name": "BEAUTY",
-        "id" :6,
-        "data":[]
-
-      },{
-        "name": "SALE",
-        "id" :7,
-        "data":[]
-
-      },{
-        "name": "PRE-OWNED",
-        "id" :8,
-        "data":[]
-
-      },{
-        "name": "OCASSSSIONS",
-        "id" :9,
-        "data":[]
-
-      }
-      
-    ]
-     } ,
-     {
-      "id" : 2, 
-       "categoryname": "MEN",
-       "subcateg":[{
-        "name": "SHOP ALL",
-        "data":[],
-        "id" :1
-      },{
-        "name": "CLOTHING",
-        "id" :2,
-        "data":[]
-      },{
-        "name": "BAGS",
-        "id" :3,
-        "data":[]
-
-      },{
-        "name": "SHOES",
-        "id" :4,
-        "data":[]
-
-      },{
-        "name": "ACCESSORIES",
-        "id" :5,
-        "data":[]
-
-      },{
-        "name": "GROOMING",
-        "id" :6,
-        "data":[]
-
-      },{
-        "name": "SALE",
-        "id" :7,
-        "data":[]
-
-      },{
-        "name": "PRE-OWNED",
-        "id" :8,
-        "data":[]
-
-      },{
-        "name": "OCASSSSIONS",
-        "id" :9,
-        "data":[]
-
-      }
-      
-    ]
-        } ,
-     {
-      "id" :3 ,
-       "categoryname": "BEAUTY" 
-       } ,
-     {
-      "id" : 4,
-       "categoryname": "KIDS"
-        } ,
-     {
-      "id" :  5,
-       "categoryname": "HOME" 
-       } ,
-     {
-      "id" : 6 , 
+                ] },
+            { "id": 1,
+               "title": "DESINERS",
+                "items": [
+                  "GUCCI",
+                  "GIVENCHY",
+                  "SAINT LAURENT",
+                  "DOLCE & GABBANA",
+                  "VALENTINO",
+                  "NEIL BAREETT",
+                  "ALEXANDER MCQUEEN",
+                  "THOM BROWNE"
+                ] },
+            {
+              "id": 4,
+              "title": "POPULAR CATEGORY",
+              "items": [
+                {
+                  "imgname": "WOMEN'S KINTWEAR",
+                  "imgsrc": "https://cdn.modesens.com/banner/20210816Women-Knits-Nav.jpg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "BAGS",
+          "id": 3,
+          "data": [
+            { "id": 1,
+               "title": "SHOP BY CATEGORY",
+                "items": [
+                  "NEW ARRIVALS",
+                   "ALL CLOTHING", 
+                   "ALL BAGS",
+                   "BACKPACKS",
+                   "SATCHELS",
+                   "TOTES",
+                   "CROSSBODY BAGS",
+                   "SHOULDER BAGS",
+                   "TRAVEL BAGS",
+                   "BELT BAGS",
+                   "WALLETS"
+                   ] },
+            { "id": 1,
+               "title": "SHOP BY LIST",
+                "items": [
+                  "COOL BACKPACKS",
+                  "CRISP WHITE BAGS",
+                  "HANDS FREE"
+                ] },
+            { "id": 1,
+               "title": "DESINERS",
+                "items": [
+                  "BURBERRY",
+                  "BOTTEGA VENETA",
+                  "GIVENCHY",
+                  "SAINT LAURENT",
+                  "KENZO",
+                  "VERSACE",
+                  "MCM",
+                  "SALVATORE FERRAGAMO"
+                ] },
+            {
+              "id": 4,
+              "title": "POPULAR CATEGORY",
+              "items": [
+                {
+                  "imgname": "WOMEN'S KINTWEAR",
+                  "imgsrc": "https://cdn.modesens.com/banner/20210816Women-Knits-Nav.jpg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SHOES",
+          "id": 4,
+          "data":  [
+            { "id": 1,
+               "title": "SHOP BY CATEGORY",
+                "items": [
+                  "NEW ARRIVALS",
+                   "ALL SHOES", 
+                   "BOOTS",
+                   "FLATS",
+                   "PUMPS",
+                   "SANDALS",
+                   "SNEAKERS",
+                   "LOAFERS",
+                   "PLATFORMS",
+                   "WEDGES",
+                   "SALE"
+                   ] },
+            { "id": 1,
+               "title": "SHOP BY LIST",
+                "items": [
+                 "DRAW ON STRAW",
+                 "STRAPPY SANDALS",
+                " LOW HEELS,BIG IMPACT",
+                "PLATFORMS SHOES",
+                "SPRINGS SANDAL STAPLES"
+                ] },
+            { "id": 1,
+               "title": "DESINERS",
+                "items": [
+                  "CHIRISTIAN LOUBOUTIN",
+                  "NICHOLAS KIRKWOOD",
+                  "GIANVITO ROSSI",
+                  "ROGER VIVER",
+                  "RENE CAOVILLA",
+                  "MANOLO BLAHNIK",
+                  "AQUAZZIRA"
+                ] },
+            {
+              "id": 4,
+              "title": "POPULAR CATEGORY",
+              "items": [
+                {
+                  "imgname": "WOMEN'S BOOTS",
+                  "imgsrc": "https://cdn.modesens.com/banner/20210816Women-Knits-Nav.jpg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ACCESSORIES",
+          "id": 5,
+          "data":[
+            { "id": 1,
+               "title": "SHOP BY CATEGORY",
+                "items": [
+                  "NEW ARRIVALS",
+                   "ALL ACCESSORIES",
+                   "JEWELRY",
+                   "WATCHES",
+                   "SUNGLASSES",
+                   "OPTICALS",
+                   "HATS",
+                   "BELTS",
+                   "GLOVES",
+                   "SCARVES",
+                   "WALLETS",
+                   "KEYCHAINS",
+                   "TIE",
+                   "HAIR ACCESSORIES",
+                   "SPORT ACCESSORIES",
+                   "BAG ACCESSORIES",
+                   "SALE"
+                   ] },
+            { "id": 1,
+               "title": "SHOP BY LIST",
+                "items": [
+                 "STATEMENT JEWELRY",
+                 "EYE CANDY",
+                 "DRAW ON STRAW"
+                ] },
+            { "id": 1,
+               "title": "DESINERS",
+                "items": [
+                  "DOLCE & GABBANA",
+                  "GUCCI",
+                  "MIU MIU",
+                  "LANVIN",
+                  "SAINT LAURENT",
+                  "FENDI",
+                  "ALEXANDER MCQUEEN",
+                  "LOEWE"
+                ] },
+            {
+              "id": 4,
+              "title": "POPULAR CATEGORY",
+              "items": [
+                {
+                  "imgname": "WOMEN'S JEWELARY",
+                  "imgsrc": "https://cdn.modesens.com/banner/20210816Women-Knits-Nav.jpg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "BEAUTY",
+          "id": 6,
+          "data": []
+        },
+        {
+          "name": "SALE",
+          "id": 7,
+          "data": []
+        },
+        {
+          "name": "PRE-OWNED",
+          "id": 8,
+          "data": []
+        },
+        {
+          "name": "OCASSSSIONS",
+          "id": 9,
+          "data": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "categoryname": "MEN",
+      "subcateg": [
+        {
+          "name": "SHOP ALL",
+          "data": [],
+          "id": 1
+        },
+        {
+          "name": "CLOTHING",
+          "id": 2,
+          "data": []
+        },
+        {
+          "name": "BAGS",
+          "id": 3,
+          "data": []
+        },
+        {
+          "name": "SHOES",
+          "id": 4,
+          "data": []
+        },
+        {
+          "name": "ACCESSORIES",
+          "id": 5,
+          "data": []
+        },
+        {
+          "name": "GROOMING",
+          "id": 6,
+          "data": []
+        },
+        {
+          "name": "SALE",
+          "id": 7,
+          "data": []
+        },
+        {
+          "name": "PRE-OWNED",
+          "id": 8,
+          "data": []
+        },
+        {
+          "name": "OCASSSSIONS",
+          "id": 9,
+          "data": []
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "categoryname": "BEAUTY"
+    },
+    {
+      "id": 4,
+      "categoryname": "KIDS"
+    },
+    {
+      "id": 5,
+      "categoryname": "HOME"
+    },
+    {
+      "id": 6,
       "categoryname": "OFFERS"
-       } ,
-     {
-      "id" : 7 ,
-       "categoryname": "DESINERS"
-        } ,
-     {
-      "id" : 8 , 
-      "categoryname": "COMMUNITY" 
-      } ,
-     {
-      "id" : 9 , 
+    },
+    {
+      "id": 7,
+      "categoryname": "DESINERS"
+    },
+    {
+      "id": 8,
+      "categoryname": "COMMUNITY"
+    },
+    {
+      "id": 9,
       "categoryname": "WHY MODESENS"
-       } 
+    }
   ],
 
-  "Mensdata":[
-    
+  "Mensdata": [
     {
       "relativehref": "https://modesens.com/product/off-white-x-neen-graffiti-print-short-sleeve-button-up-shirt-multicolour-40016256/",
       "imgsrc": "https://cdn.modesens.com/availability/48974218?w=400&",
@@ -340,7 +536,7 @@
       "price": "$185 - $437",
       "stores": "14 stores"
     },
-    
+
     {
       "relativehref": "https://modesens.com/product/valentino-vlogo-signature-print-denim-shirt-light-blue-39238760/",
       "imgsrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%221%22%20height%3D%221%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20%25%7Bw%7D%20%25%7Bh%7D%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20style%3D%22fill%3Atransparent%3B%22%3E%3C%2Frect%3E%3C%2Fsvg%3E",
@@ -1860,8 +2056,4 @@
     }
   ]
 
-
-  
-
 }
-   
