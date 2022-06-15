@@ -186,7 +186,7 @@ export const Menspage = () => {
                     </div>
                     <div className={style.prheavyfilters}>
                         <div onClick={categorydrop}>CATEGORY
-                        {categories &&<div style={{overflow:"hidden"}}className={style.prdesignerdropdown}>
+                        {categories &&<div className={style.prdesignerdropdown}>
                                         { catdata?.map((el)=>(
                                           <div style={{display:"flex",justifyContent:"space-between",fontSize:"12px",marginBottom:"15px"}}>
                                           <div style={{width:"80%",color:"#979cb5"}}>{el.name}</div>
