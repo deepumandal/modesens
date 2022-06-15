@@ -40,6 +40,7 @@ const navigate = useNavigate()
     const item = data.find(isfind);
 
     function isfind(i) {
+      
       if (i.categoryname === name.trim()) {
         setselected(i);
         // console.log(i)
