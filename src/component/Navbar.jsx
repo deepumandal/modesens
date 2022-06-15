@@ -143,7 +143,9 @@ const navigate = useNavigate()
                   name={"COMMUNITY"}
                   className={cx(style.subcateg, utility.cursurhover)}
                 >
+                  <Link to="/community">
                   COMMUNITY
+                  </Link>
                 </div>
                 <div
                   onMouseOver={someonehoverme}

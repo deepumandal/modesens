@@ -13,6 +13,7 @@
     "axios": "^0.27.2",
     "classnames": "^2.3.1",
     "framer-motion": "^6.3.11",
+    "json-server": "^0.17.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-redux": "^8.0.2",
