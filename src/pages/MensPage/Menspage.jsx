@@ -5,15 +5,22 @@ import { useDispatch, useSelector } from 'react-redux'
 import { getcat, getmensAPI } from '../../store/Mens/mensaction'
 import { Mensdropdown } from '../../component/Mensdropdown'
 import { Product } from '../../component/Product.jsx'
+import { Dropfilt } from '../../component/Dropfilt.jsx'
 export const Menspage = () => {
 
     let gender=["Women","Men","Kids"]
     let condition=["All","New","Pre-owned"]
+    let designers=["NIKE","GUCCI","BALENCIAGA","ALEXANDER MCQUEEN","OFF-WHITE",
+                    "VALENTINO","BURBERRY","D&G","VERSACE","GIVENCHY","SAINT LAURENT",
+                    "ADIDAS","BOTTEGA VENETA","FENDI","PALM ANGELS","MARNI","MAISON MARGIELA",
+                    "TOM FORD","RICK OWENS","THOM BROWNE","MONCLER","BALMAIN","LANVIN","ACNE STUDIOS",
+                    "MOSCHINO","TOD'S","RAG & BONE","DIOR","MARSELL","NEIL BARRET","ETRO",
+                    "YEEZY","CELINE","MARC JACOBS","MULBERRY","JIMMY CHOO","ROCHAS","CHANEL","KTZ","CASADEI"]
     let [gclick,setGclick]=React.useState(false)
     let [condclick,setCondclick]=React.useState(false)
     let [catclick,setCatclick]=React.useState(false)
     let[categories,setCategories]=React.useState(false)
-   
+    let[designer,setDesigner]=React.useState(false)
 
 
     const mensdata=useSelector((state)=>state.mens.mdata)
@@ -35,6 +42,16 @@ export const Menspage = () => {
        }
        
      }
+     let designerdrop=()=>{
+        if(!designer)
+        { 
+         setDesigner(!designer)
+        }
+        else{
+         setDesigner(!designer)
+        }
+        
+      }
   return (
     <div>
         <div className={style.prdesignerdiv}>
@@ -84,7 +101,8 @@ export const Menspage = () => {
                         </div>
                            
                     
-                        <div>DESIGNER</div>
+                        <div onClick={designerdrop}>DESIGNER</div>
+                        {designer &&<Dropfilt dropcontent={designers}/>}
 
                         <div>SIZE</div>
 

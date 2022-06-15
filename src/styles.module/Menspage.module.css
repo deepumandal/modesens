@@ -47,11 +47,22 @@
     width:18%;
     z-index:6;
     position:absolute;
-    
-  
     margin-right: 1%;
     border:1px solid black;
    
+}
+.prdesignerdropdown
+{
+    
+    background-color:white;
+    width:18%;
+    z-index:6;
+    position:absolute;
+    /* margin-right: 1%; */
+   
+    overflow-y: scroll;
+    height:300px;
+  
 }
 .prquickdiv{
     background-color:white;
