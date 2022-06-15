@@ -192,8 +192,8 @@ export const Menspage = () => {
                                           <div style={{width:"80%",color:"#979cb5"}}>{el.name}</div>
                                           </div>
                                           ))
-                                          
-                                        }
+                                        }  
+                                        
                                       </div>} 
                     </div>
        
