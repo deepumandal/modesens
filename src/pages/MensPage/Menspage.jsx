@@ -66,6 +66,7 @@ export const Menspage = () => {
         </div>
         <div style={{display:"flex",marginBottom:"10px"}}>
             <div className={style.prpaginate}>
+            <div style={{display: page>1 ? "block":"none"}} onClick={()=>pagehandle(page-1)}className={style.prpageindic}><i class="fa-solid fa-angle-left"></i></div>
                 <div onClick={()=>pagehandle(1)}className={style.prpageindic}>1</div>
                 <div onClick={()=>pagehandle(2)}className={style.prpageindic}>2</div>
                 <div onClick={()=>pagehandle(3)}className={style.prpageindic}>3</div>
