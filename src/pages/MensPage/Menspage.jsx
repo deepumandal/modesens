@@ -2,7 +2,7 @@ import React from 'react'
 import {handlegclick,handlecondclick,handlecatclick,categorydrop, handlequickview} from "./functionformens.js"
 import style from '../../styles.module/Menspage.module.css'
 import { useDispatch, useSelector } from 'react-redux'
-import { getcat, getmensAPI, pageaction } from '../../store/Mens/mensaction'
+import { getcat, getmensAPI, pageaction, sorting } from '../../store/Mens/mensaction'
 import { Mensdropdown } from '../../component/Mensdropdown'
 import { Product } from '../../component/Product.jsx'
 import { Dropfilt } from '../../component/Dropfilt.jsx'
@@ -57,6 +57,9 @@ export const Menspage = () => {
         console.log("inpagehandle")
         dispatch(pageaction(num))
       }
+      let handleselction=(e)=>{
+        dispatch(sorting(e.target.value,page))
+      }
   return (
     <div>
         <div className={style.prdesignerdiv}>
@@ -75,12 +78,12 @@ export const Menspage = () => {
                 <div onClick={()=>pagehandle(page+1)}className={style.prpageindic}><i class="fa-solid fa-angle-right"></i></div>
             </div>
             <div style={{marginLeft:"22%"}}>
-                <select className={style.prselect}>
+                <select onChange={(e)=>handleselction(e)}className={style.prselect}>
                     <option value="">Best Sellers</option>
                     <option value="">New Arrival</option>
                     <option value="">New Arrival</option>
-                    <option value="">Highest Price</option>
-                    <option value="">Lowest Price</option>
+                    <option value="desc">Highest Price</option>
+                    <option value="asc">Lowest Price</option>
                     <option value="">New Sale</option>
                     <option value="">Largest Discount Amount</option>
                     <option value="">Largest Discount Percentage</option>
