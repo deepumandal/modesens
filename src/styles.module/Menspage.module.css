@@ -44,20 +44,20 @@
 {
     
     background-color:white;
-    width:18%;
+    width:100%;
     z-index:6;
-    position:absolute;
+    /* position:absolute; */
     margin-right: 1%;
     border:1px solid black;
    
 }
 .prdesignerdropdown
 {
-    
+  
     background-color:white;
-    width:18%;
+    width:100%;
     z-index:6;
-    position:absolute;
+    /* position:absolute; */
     /* margin-right: 1%; */
    
     overflow-y: scroll;
@@ -124,9 +124,12 @@
    text-decoration: underline;
    cursor: pointer;
 }
+.prheavyfilters{
+    transition:10s;
+}
 .prheavyfilters>div
 {
- 
+  
   padding-top: 4%;
   padding-bottom: 4%;
   text-align: start;
@@ -140,4 +143,12 @@
     margin-left:22%;
     height:100px;
     line-height:50px
+}
+.prselectstore
+{
+    height:40px;
+    background-color: black;
+    color:white;
+    text-align: center;
+    margin-top: 10px;
 }
