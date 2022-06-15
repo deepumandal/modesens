@@ -1,4 +1,4 @@
-import { GET_CATEGORY, GET_MENS_DATA_SUCCESS, GET_NEXT_PAGE, GET_PAGESUCCESS } from "./menstype";
+import { GET_CATEGORY, GET_FILTERED_DATA, GET_MENS_DATA_SUCCESS, GET_NEXT_PAGE, GET_PAGESUCCESS } from "./menstype";
 let initialState={page:1,catdata:[],mdata:[],mloaderror:{loading:false,error:false}}
 export const mensreducer=(state=initialState,action)=>{
 switch (action.type)
@@ -14,6 +14,10 @@ switch (action.type)
     {
         return{...state,page:action.payload}
     }
+    case GET_FILTERED_DATA:
+        {
+            return {...state,mdata:action.payload}
+        }
     default:
        {
         return{...state}
