@@ -2,7 +2,7 @@ import React from 'react'
 import {handlegclick,handlecondclick,handlecatclick,categorydrop, handlequickview} from "./functionformens.js"
 import style from '../../styles.module/Menspage.module.css'
 import { useDispatch, useSelector } from 'react-redux'
-import { getcat, getmensAPI } from '../../store/Mens/mensaction'
+import { getcat, getmensAPI, pageaction } from '../../store/Mens/mensaction'
 import { Mensdropdown } from '../../component/Mensdropdown'
 import { Product } from '../../component/Product.jsx'
 import { Dropfilt } from '../../component/Dropfilt.jsx'
@@ -25,11 +25,12 @@ export const Menspage = () => {
 
     const mensdata=useSelector((state)=>state.mens.mdata)
     const catdata=useSelector((state)=>state.mens.catdata)
+    const page=useSelector((state)=>state.mens.page)
     const dispatch=useDispatch()
     
     React.useEffect(()=>{
-        dispatch(getmensAPI())
-    },[dispatch])
+        dispatch(getmensAPI(page))
+    },[dispatch,page])
 
 
     let categorydrop=()=>{
@@ -52,13 +53,40 @@ export const Menspage = () => {
         }
         
       }
+      let pagehandle=(num)=>{
+        console.log("inpagehandle")
+        dispatch(pageaction(num))
+      }
   return (
     <div>
         <div className={style.prdesignerdiv}>
+           
             <div style={{fontSize:"24px"}}><b>Designer Clothing for men</b></div>
             <p style={{fontSize:"12px",fontWeight:"500"}}>Designer clothing for men with price comparison across 500+ stores in one place. Discover the latest designer clothing for men at ModeSens.</p>
         </div>
-        <div style={{border:"1px solid black"}}>hello</div>
+        <div style={{display:"flex",marginBottom:"10px"}}>
+            <div className={style.prpaginate}>
+                <div onClick={()=>pagehandle(1)}className={style.prpageindic}>1</div>
+                <div onClick={()=>pagehandle(2)}className={style.prpageindic}>2</div>
+                <div onClick={()=>pagehandle(3)}className={style.prpageindic}>3</div>
+                <div onClick={()=>pagehandle(4)}className={style.prpageindic}>4</div>
+                <div  style={{textAlign:"center"}}>...</div>
+                <div onClick={()=>pagehandle(page+1)}className={style.prpageindic}><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+            <div style={{marginLeft:"22%"}}>
+                <select className={style.prselect}>
+                    <option value="">Best Sellers</option>
+                    <option value="">New Arrival</option>
+                    <option value="">New Arrival</option>
+                    <option value="">Highest Price</option>
+                    <option value="">Lowest Price</option>
+                    <option value="">New Sale</option>
+                    <option value="">Largest Discount Amount</option>
+                    <option value="">Largest Discount Percentage</option>
+                </select>
+            </div>
+            
+        </div>
         <div className={style.prmaincontainer}>
             <div className={style.prsidebar}>
                <div >
