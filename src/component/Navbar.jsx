@@ -36,8 +36,7 @@ const Navbar = () => {
     const name = e.target.innerHTML;
     const item = data.find(isfind);
 
-    function isfind(i) {   
-      
+    function isfind(i) {
       if (i.categoryname === name.trim()) {
         setselected(i);
         // console.log(i)
@@ -45,8 +44,6 @@ const Navbar = () => {
 
       // console.log(selected)
     }
-
-    
   };
   // ends here
 
@@ -65,7 +62,7 @@ const Navbar = () => {
               />
 
               <div className={cx(utility.flex)}>
-                {data.map(
+                {/* {data.map(
                   (
                     Categ,
                     index // console.log(Categ.sub.categoryname)
@@ -80,7 +77,71 @@ const Navbar = () => {
                       {Categ.categoryname}{" "}
                     </div>
                   )
-                )}
+                )} */}
+
+                <div
+                  onMouseOver={someonehoverme}
+                  name={"WOMEN"}
+                  className={cx(style.subcateg, utility.cursurhover)}
+                >
+                  WOMEN
+                </div>
+                <div
+                  onMouseOver={someonehoverme}
+                  name={"MEN"}
+                  className={cx(style.subcateg, utility.cursurhover)}
+                >
+                  MEN
+                </div>
+                <div
+                  onMouseOver={someonehoverme}
+                  name={"BEAUTY"}
+                  className={cx(style.subcateg, utility.cursurhover)}
+                >
+                  BEAUTY
+                </div>
+                <div
+                  onMouseOver={someonehoverme}
+                  name={"KIDS"}
+                  className={cx(style.subcateg, utility.cursurhover)}
+                >
+                  KIDS
+                </div>
+                <div
+                  onMouseOver={someonehoverme}
+                  name={"HOME"}
+                  className={cx(style.subcateg, utility.cursurhover)}
+                >
+                  HOME
+                </div>
+                <div
+                  onMouseOver={someonehoverme}
+                  name={"OFFERS"}
+                  className={cx(style.subcateg, utility.cursurhover)}
+                >
+                  OFFERS
+                </div>
+                <div
+                  onMouseOver={someonehoverme}
+                  name={"DESIGNERS"}
+                  className={cx(style.subcateg, utility.cursurhover)}
+                >
+                  DESIGNERS
+                </div>
+                <div
+                  onMouseOver={someonehoverme}
+                  name={"COMMUNITY"}
+                  className={cx(style.subcateg, utility.cursurhover)}
+                >
+                  COMMUNITY
+                </div>
+                <div
+                  onMouseOver={someonehoverme}
+                  name={"WHY"}
+                  className={cx(style.subcateg, utility.cursurhover)}
+                >
+                  WHY MODESENS
+                </div>
               </div>
             </div>
 
@@ -125,7 +186,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          <Navdropdown props={selected} disi = {true} />
+          <Navdropdown props={selected} disi={true} />
         </div>
       </div>
     </div>
