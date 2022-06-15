@@ -1,8 +1,24 @@
 import React from 'react'
-
+import Carousel from 'react-bootstrap/Carousel';
+import Banner from './Banner';
+import HomePartners from './HomePartners';
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+      <Banner />
+      <br />
+      <HomePartners/>
+      <hr />
+      <div> Special Offers</div>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+    </div>
   )
 }
 
