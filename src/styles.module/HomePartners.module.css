@@ -1,0 +1,23 @@
+.img{
+    /* border: 1px solid red; */
+    width: 15% !important;
+}
+.boxs{
+    /* border : 1px solid red; */
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+}
+.controlleft{
+    width: 30px;
+    position: relative;
+    top: 130px;
+}
+.controlright{
+    width: 30px;
+    position: relative;
+    top: -122px;
+    right: -900px;
+}
