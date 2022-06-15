@@ -2,6 +2,7 @@
 {
     display:flex;
     gap:5px;
+    overflow: hidden;
 }
 
 .prsidebar
@@ -44,12 +45,18 @@
 {
     
     background-color:white;
-    width:100%;
+    width:18%;
     z-index:6;
-    /* position:absolute; */
+    position:absolute;
     margin-right: 1%;
     border:1px solid black;
-   
+    font-size:15px;
+    color:#979cb5;
+    padding-left: 2%;
+}
+.prdropdown_firstthree>div:hover{
+    color:black;
+    cursor: pointer;
 }
 .prdesignerdropdown
 {
@@ -57,9 +64,7 @@
     background-color:white;
     width:100%;
     z-index:6;
-    /* position:absolute; */
-    /* margin-right: 1%; */
-   
+    
     overflow-y: scroll;
     height:300px;
   
@@ -95,6 +100,8 @@
     padding-top: 2%;
     padding-bottom: 2%;
     cursor: pointer;
+    font-size:15px;
+    color:grey;
 }
 .prsavemysearch{
     height:40px;
