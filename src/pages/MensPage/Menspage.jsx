@@ -133,12 +133,11 @@ export const Menspage = () => {
                 <div onClick={()=>pagehandle(3)}className={style.prpageindic}>3</div>
                 <div onClick={()=>pagehandle(4)}className={style.prpageindic}>4</div>
                 <div  style={{textAlign:"center"}}>...</div>
-                <div onClick={()=>pagehandle(page+1)}className={style.prpageindic}><i class="fa-solid fa-angle-right"></i></div>
+                <div style={{display: page>=4 ? "none":"block"}} onClick={()=>pagehandle(page+1)}className={style.prpageindic}><i class="fa-solid fa-angle-right"></i></div>
             </div>
-            <div style={{marginLeft:"22%"}}>
+            <div style={{marginLeft:"22%" }}>
                 <select onChange={(e)=>handleselction(e)}className={style.prselect}>
                     <option value="">Best Sellers</option>
-                    <option value="">New Arrival</option>
                     <option value="">New Arrival</option>
                     <option value="desc">Highest Price</option>
                     <option value="asc">Lowest Price</option>
@@ -187,9 +186,20 @@ export const Menspage = () => {
                     </div>
                     <div className={style.prheavyfilters}>
                         <div onClick={categorydrop}>CATEGORY
-                        {categories &&<Mensdropdown dropcontent={catdata}/>}
-                        </div>
-                           
+                        {categories &&<div style={{overflow:"hidden"}}className={style.prdesignerdropdown}>
+                                        { catdata?.map((el)=>(
+                                          <div style={{display:"flex",justifyContent:"space-between",fontSize:"12px",marginBottom:"15px"}}>
+                                          <div style={{width:"80%",color:"#979cb5"}}>{el.name}</div>
+                                          </div>
+                                          ))
+                                        }
+                                      </div>} 
+                    </div>
+       
+       
+   
+                    
+                        
                     
                         <div onClick={designerdrop}>DESIGNER</div>
                         {designer &&<div>

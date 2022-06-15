@@ -182,12 +182,13 @@
     border:transparent;
     user-select: none;
     cursor: pointer;
+    outline:none
 }
 .prselect:focus{
     border:1px solid #b5f3f0
 }
-.prselect>option::selection{
-    background-color: none;
+ option:hover{
+    background-color: red;
 }
 .prselect>option:hover{
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
