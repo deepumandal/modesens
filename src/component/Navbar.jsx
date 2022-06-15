@@ -5,6 +5,7 @@ import cx from "classnames";
 import { useDispatch, useSelector } from "react-redux";
 import { getnavdataapi } from "../store/Navbar/nav.action";
 import Navdropdown from "./Navdropdown";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   // let Navbar = [
@@ -18,6 +19,8 @@ const Navbar = () => {
   //   "COMMUNITY",
   //   "WHY MODESENS",
   // ];
+const navigate = useNavigate()
+
   // navbar api fetch here
   const dispatch = useDispatch();
   const {
@@ -54,12 +57,15 @@ const Navbar = () => {
         <div className={cx(utility.container)}>
           <div className={style.navbar}>
             <div id={style.leftdiv}>
+              
               <img
                 className={utility.cursurhover}
                 id={style.logo}
                 src="https://cdn.modesens.com/static/img/20190228newlogo-black.svg"
-                alt=""
-              />
+                alt=""  
+                onClick={()=> navigate('/')}
+                />
+                
 
               <div className={cx(utility.flex)}>
                 {/* {data.map(
@@ -91,7 +97,9 @@ const Navbar = () => {
                   name={"MEN"}
                   className={cx(style.subcateg, utility.cursurhover)}
                 >
+                  <Link to='/shop-men-clothing'>
                   MEN
+                  </Link>
                 </div>
                 <div
                   onMouseOver={someonehoverme}
@@ -119,7 +127,9 @@ const Navbar = () => {
                   name={"OFFERS"}
                   className={cx(style.subcateg, utility.cursurhover)}
                 >
+                  <Link to='/offers'>
                   OFFERS
+                  </Link>
                 </div>
                 <div
                   onMouseOver={someonehoverme}
