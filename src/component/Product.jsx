@@ -23,19 +23,19 @@ export const Product = ({el}) => {
                                   <Modal size={"3xl"}closeOnOverlayClick={false} isOpen={isOpen} onClose={onClose}>
                                     <ModalOverlay />
                                     <ModalContent>
-                                    <ModalHeader>Create your account</ModalHeader>
+                                    <ModalHeader></ModalHeader>
                                     <ModalCloseButton />
                                     <ModalBody pb={6}>
-                                      <div style={{border:"1px solid green",display:"flex",height:"50%",width:"100%",justifyContent:"space-around"}}>
-                                        <div style={{border:"1px solid red",width:"50%",height:"400px"}}>
-                                        <div style={{display:"flex",justifyContent:"flex-end",fontSize:"25px"}}><i class="fa-regular fa-heart"></i></div>
+                                      <div style={{display:"flex",height:"50%",width:"100%",justifyContent:"space-around"}}>
+                                        <div style={{width:"50%",height:"400px"}}>
+                                        <div style={{marginBottom:"5px",display:"flex",justifyContent:"flex-end",fontSize:"25px"}}><i class="fa-regular fa-heart"></i></div>
                                         <div style={{display:"flex",justifyContent:"flex-end",fontSize:"25px"}}><i class="fa-regular fa-share-from-square"></i></div>
                                           <img style={{height:"80%",margin:"auto"}} src={el.imgsrc}/>
                                         </div>
-                                        <div  style={{width:"40%",border:"1px solid red",lineHeight:"40px"}}>
-                                          <div style={{fontSize:"18px",fontWeight:"600"}}>{el.brand}</div>
-                                          <div style={{fontSize:"14px",fontWeight:"600"}}>{el.description}</div>
-                                          <div style={{fontSize:"20px",fontWeight:"600"}}>{el.price}</div>
+                                        <div  style={{width:"40%"}}>
+                                          <div style={{fontSize:"18px",fontWeight:"600",marginBottom:"20px"}}>{el.brand}</div>
+                                          <div style={{fontSize:"14px",fontWeight:"600",marginBottom:"20px"}}>{el.description}</div>
+                                          <div style={{fontSize:"20px",fontWeight:"600",marginBottom:"20px"}}>{el.price}</div>
                                           <div className={style.prselectstore}><a href="">BUY FROM STORE</a></div>
                                         </div>
                                       </div>
