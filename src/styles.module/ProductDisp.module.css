@@ -1,0 +1,58 @@
+.primginfodiv{
+ border:1px solid green;
+ width:80%;
+ margin:auto;
+ display:flex;
+ height:380px;
+ justify-content:space-between;
+ gap:20px
+}
+.prproductinfodiv
+{
+    border:1px solid red;
+    width:40%;
+    font-size:20px;
+    text-align:start;
+    font-weight:500;
+}
+.prproductinfodiv>div>div{
+    margin-bottom: 20px;
+}
+.prQandA{
+    display:flex;
+    width:80%;
+    margin:auto;
+    justify-content:space-between;
+    height:'50px';
+    margin-bottom:30px
+}
+.prQandA>input{
+   width:80%;
+   height:40px;
+}
+.prQandA>div{
+    display:flex;
+    
+    width:15%;
+    justify-content:space-around;
+    height:auto;
+    
+}
+.prdstore{
+    background-color: black;
+    color:white;
+    width:40%;
+    cursor: pointer;
+}
+.prpost{
+    font-size:20px;
+    text-align:center;
+    padding-top:5%
+}
+.inp{
+    outline:none;
+    cursor: pointer;
+}
+.inp:focus{
+    border:1px solid aquamarine
+}
