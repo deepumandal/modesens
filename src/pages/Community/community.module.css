@@ -1,21 +1,25 @@
 .main_container{
     font-family: "Suisse Intl";
-
+    padding: 20px 20px ;
 }
 
 .top_bar_image_div{
     position: relative;
     color: white;
+    width: fit-content;
+    margin: auto;
 }
+/* .top_bar_image_div img{} */
 .top_bar_image_text{
-    position: absolute;
-    bottom: 40px;
+    position: relative;
+    bottom: 150px;
     left: 30px;
 }
 .top_bar_image_text h1{
     font-weight: 700;
     font-size: 45px;
     line-height: 54px;
+    text-align: left;
 }
 .top_bar_image_text p{
     font-weight: 300;
@@ -23,8 +27,11 @@
     text-align: left;
 }
 .community_posts{
+    width: fit-content;
+    margin: auto;
+    justify-content: center;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3,35%);
     gap: 10px;
     padding: 10px 10px;
 }

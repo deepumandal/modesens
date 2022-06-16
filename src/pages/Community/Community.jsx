@@ -4,6 +4,7 @@ import style from "./community.module.css"
 import Communitydata from "./Community_Data/CommunityData"
 const Community = () => {
   return (
+    <div classname="container">
     <div className={style.main_container}>
         <div className={style.top_bar_image_div}>
             <img src="https://modesens.com/banner/12428/getimg/?img=%2Fbanner%2F20220610-modesens-hashtag-1440x250-F.jpg" alt="TopImage" />
@@ -21,6 +22,7 @@ const Community = () => {
         </div>
         
             
+    </div>
     </div>
         
   )
