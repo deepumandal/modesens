@@ -315,6 +315,9 @@ const SpecialOff = () => {
           > READ NOW </button>
         </div>
       </OwlCarousel>
+
+      <button> More view </button>
+
     </div>
   );
 };
