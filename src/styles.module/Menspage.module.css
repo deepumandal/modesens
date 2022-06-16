@@ -69,11 +69,12 @@
     background-color:white;
     width:100%;
     z-index:6;
-    
     overflow-y: scroll;
     height:300px;
-  
 }
+   
+    
+    
 .prquickdiv{
     background-color:white;
    border:1px solid black;
