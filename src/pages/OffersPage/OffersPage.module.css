@@ -1,12 +1,29 @@
 .sidInput {
-  outline: 0;
   border-width: 0 0 2px;
-  margin: auto;
   width: 30%;
 }
 
-.sidTitle{
-    text-decoration: solid;
-    font-weight: bold;
-    color: black;
+.sidTitle {
+  text-decoration: solid;
+  font-weight: bold;
+  color: black;
+}
+
+.sidGrid{
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  margin: auto;
+  width: 90%;
+  /* border: 1px solid black; */
+  /* background-color: #2196F3; */
+  justify-content: center;
+}
+
+.sidGrid_Container{
+  /* border: 1px solid gray; */
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: 100%;
+  border-radius: 15px;
 }

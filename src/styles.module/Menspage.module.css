@@ -1,8 +1,10 @@
 .prmaincontainer
 {
+    border: 1px solid red;
     display:flex;
     gap:5px;
-    overflow: hidden;
+    width: 100%;
+    /* overflow: hidden; */
 }
 
 .prsidebar
@@ -10,20 +12,22 @@
     width:20%;
     height:auto;
   
-    margin-left: 3%;
+    margin-right: 3%;
 }
 
 .prprodcontainer
 {
     display:grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3,31%);
     width:80%;
+    justify-content: space-between;
+    border: 1px solid teal;
    
    
 }
 .prindiv
-{   width: 390.5;
-    height:507px;
+{   width: 300.5;
+    height:497px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .prindiprop

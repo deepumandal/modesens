@@ -119,7 +119,7 @@ export const Menspage = () => {
         dispatch(sorting(e.target.value,page))
       }
   return (
-    <div>
+    <div className='container m2'>
         <div className={style.prdesignerdiv}>
            
             <div style={{fontSize:"24px"}}><b>Designer Clothing for men</b></div>
