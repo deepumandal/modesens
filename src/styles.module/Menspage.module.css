@@ -156,12 +156,12 @@
     line-height:50px
 }
 .prselectstore
-{
+{   display:flex;
+    justify-content: center;
     height:40px;
     background-color: black;
     color:white;
-    text-align: center;
-    margin-top: 10px;
+   align-items: center;
 }
 .prpaginate
 {

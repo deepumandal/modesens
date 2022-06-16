@@ -47,7 +47,7 @@ let handlewishclick=()=>{
                                           <div style={{fontSize:"18px",fontWeight:"600",marginBottom:"20px"}}>{el.brand}</div>
                                           <div style={{fontSize:"14px",fontWeight:"600",marginBottom:"20px"}}>{el.description}</div>
                                           <div style={{fontSize:"20px",fontWeight:"600",marginBottom:"20px"}}>{el.price}</div>
-                                          <div className={style.prselectstore}><a href="">BUY FROM STORE</a></div>
+                                          <div className={style.prselectstore}><Link style={{color:"white"}}to={`/proddisplay/${el.description}`}>BUY FROM STORE</Link></div>
                                         </div>
                                       </div>
                                       <div>
