@@ -15,18 +15,27 @@ const Home = () => {
       <br />
       <br />
       <br />
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
+<div className="container">
+<div style={{ display: "flex", justifyContent: "space-between" }}>
         <div className={styles.lineing}></div>
       </div>
 
       <div className={styles.centerele}> Special Offers </div>
+</div>
 
       <br />
       <br />
       <SpecialOff />
       <br />
       <br />
-       <h3> trendindig</h3>
+  <div className="container">
+  <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <div className={styles.lineing}></div>
+      </div>
+
+      <div className={styles.centerele}> Trending Now </div>
+  </div>
+
       <br />
       <br />
       {/* <HomeTrending /> */}
