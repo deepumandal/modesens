@@ -1,0 +1,39 @@
+.imgspoffers{
+    width: 95% !important;
+    margin: auto;
+    height: 200px !important;
+}
+.name{
+    font-family: "Suisse Intl";
+    font-size: 14px;
+    line-height: 18px;
+    color:  #1c1c1c;
+    font-weight: 700;
+    margin: 9px;
+}
+.about{
+    font-family: "Suisse Intl";
+    font-size: 12px;
+    line-height: 18px;
+    color: #8e8e8e;
+    font-weight: 500;
+}
+.PriceRange{
+    font-family: "Suisse Intl";
+    font-size: 12px;
+    line-height: 18px;
+    color: #1c1c1c;
+    font-weight: 400;
+}
+.store{
+    font-family: "Suisse Intl";
+    font-size: 12px;
+    line-height: 18px;
+    color: #8e8e8e;
+    font-weight: 400;
+}
+.button:hover{
+    background-color:  #1c1c1c;
+    color: white !important;
+    transition: 0.5s;
+}

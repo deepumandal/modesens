@@ -82,3 +82,15 @@
     width: 1224px;
     margin: auto;
 }
+
+/* special offers home page */
+
+.imgspoffers{
+    width: 95% !important;
+    margin: auto;
+}
+.button:hover{
+    background-color:  #1c1c1c;
+    color: white !important;
+    transition: 0.5s;
+}

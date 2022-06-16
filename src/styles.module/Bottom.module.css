@@ -1,0 +1,41 @@
+.parent{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    /* overflow: hidden; */
+}
+
+.childwala{
+    /* border:  1px solid red; */
+    display: flex;
+   align-items: center;
+    flex-direction: column;
+}
+.h1s{
+    font-family: "Suisse Intl";
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 30px;
+    color: #1c1c1c;
+    cursor: pointer;
+}
+.strongs{
+    font-family: "Suisse Intl";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color:  #1c1c1c;
+    cursor: pointer; 
+}
+.buttons{
+    font-family: "Suisse Intl";
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 800;
+    color: #ffff;
+    font-weight: 400;
+    background-color: #1c1c1c;
+    cursor: pointer;
+margin-bottom: 20px;
+    padding: 6px 9px;
+}
