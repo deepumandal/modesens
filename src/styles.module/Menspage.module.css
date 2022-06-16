@@ -23,7 +23,7 @@
 .prindiv
 {   width: 390.5;
     height:507px;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .prindiprop
 {   height:70%;
@@ -44,20 +44,20 @@
 {
     
     background-color:white;
-    width:18%;
+    width:100%;
     z-index:6;
-    position:absolute;
+    /* position:absolute; */
     margin-right: 1%;
     border:1px solid black;
    
 }
 .prdesignerdropdown
 {
-    
+  
     background-color:white;
-    width:18%;
+    width:100%;
     z-index:6;
-    position:absolute;
+    /* position:absolute; */
     /* margin-right: 1%; */
    
     overflow-y: scroll;
@@ -124,9 +124,12 @@
    text-decoration: underline;
    cursor: pointer;
 }
+.prheavyfilters{
+    transition:10s;
+}
 .prheavyfilters>div
 {
- 
+  
   padding-top: 4%;
   padding-bottom: 4%;
   text-align: start;
@@ -140,4 +143,46 @@
     margin-left:22%;
     height:100px;
     line-height:50px
+}
+.prselectstore
+{
+    height:40px;
+    background-color: black;
+    color:white;
+    text-align: center;
+    margin-top: 10px;
+}
+.prpaginate
+{
+    margin-Left:50%;
+    display:flex
+}
+
+.prpageindic{
+    width:30px;
+    cursor: pointer;
+}
+.prpageindic:hover{
+   border-bottom: 1px solid orange;
+   
+}
+.prpageindic:focus{
+    border-bottom: 1px solid orange;
+    
+ }
+.prselect{
+    text-align:end;
+    border:transparent;
+    user-select: none;
+    cursor: pointer;
+}
+.prselect:focus{
+    border:1px solid #b5f3f0
+}
+.prselect>option::selection{
+    background-color: none;
+}
+.prselect>option:hover{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    background-color:black;
 }

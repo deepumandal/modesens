@@ -1,0 +1,19 @@
+.lineing{
+    border: 0.0001px solid #929292;
+    width: 100%;
+    height: 0px;
+}
+.centerele{
+    font-size : 24px;
+    font-weight : 600;
+    letter-spacing: 1px;
+    color : #1c1c1c;
+    
+    background-color :   white;
+    text-shadow : 20px 20px white;
+    width: fit-content;
+    position: relative;
+  margin: auto;padding: 5px;
+    margin-top : -25px;
+    
+}
