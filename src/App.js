@@ -24,6 +24,7 @@ function App() {
         <Route path="/offers" element={<Offers/>}></Route>
         <Route path="/community" element={<Community></Community>}></Route>
         <Route path="/proddisplay/:description" element={<Productdisplay/>} ></Route>
+        <Route path="/community" element={<Community/>}></Route>
       </Routes>
       {/* <Offers/> */}
     </div>
