@@ -47,7 +47,7 @@ export const Productdisplay = () => {
                                                     <div>{el.brand}</div>
                                                     <div style={{fontSize:"14px"}}>{el.description}</div>
                                                     <div style={{fontSize:"18px"}}>{el.price}</div>
-                                                    <div className={style.prdstore}><a href={"https://www.farfetch.com/shopping/men/off-white-graffiti-print-short-sleeved-t-shirt-item-17592993.aspx?fsb=1&clickref=1101lvTZDEBj&utm_source=modesens&utm_medium=affiliate&utm_campaign=PHUS&utm_term=USNetwork&pid=performancehorizon_int&c=modesens&clickid=1101lvTZDEBj&af_siteid=1100l16177&af_sub_siteid=1011l270&af_cost_model=CPA&af_channel=affiliate&is_retargeting=true#modesens=1"}>Buy from Store</a></div>
+                                                    <div className={style.prdstore}><a style={{color:"white"}} href={"https://www.farfetch.com/shopping/men/off-white-graffiti-print-short-sleeved-t-shirt-item-17592993.aspx?fsb=1&clickref=1101lvTZDEBj&utm_source=modesens&utm_medium=affiliate&utm_campaign=PHUS&utm_term=USNetwork&pid=performancehorizon_int&c=modesens&clickid=1101lvTZDEBj&af_siteid=1100l16177&af_sub_siteid=1011l270&af_cost_model=CPA&af_channel=affiliate&is_retargeting=true#modesens=1"}>Buy from Store</a></div>
                                                     <div style={{fontSize:"14px"}}>Earn upto <span style={{color:"red",fontWeigth:"400"}}>1049</span> points from this purchase</div>
                                                 </div>
                                                 ))
