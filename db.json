@@ -1982,7 +1982,7 @@
     }
   ],
 
-  "OffersData": [
+  "OffersData":[
     {
       "d_block_href": "https://modesens.com/product/tranlink/?link=https%3A%2F%2Fwww.ssense.com%2Fen-us%2Fwomen%2Fsale",
       "coupone_merchant_logo_src": "https://cdn.modesens.com/merchant/ssense-logo.png?w=400&",
@@ -3146,4 +3146,5 @@
       "b_size": "06/13/2022 - 06/19/2022"
     }
   ]
+
 }
