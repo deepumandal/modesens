@@ -1,5 +1,6 @@
 import React from 'react'
 import style from "../styles.module/Menspage.module.css"
+import { Link } from 'react-router-dom'
 import {
   Modal,
   ModalOverlay,
@@ -28,7 +29,7 @@ let handlewishclick=()=>{
     <div className={style.prindiv}>
                         <div className={style.primgquidiv}>
                             <div style={{display:"flex",justifyContent:"flex-end",fontSize:"25px"}}><i onClick={handlewishclick} style={{color: wished && "red"}} class="fa-regular fa-heart"></i></div>
-                            <img className={style.primg}  src={el.imgsrc}/>
+                            <Link to={`/proddisplay/${el.description}`}><img className={style.primg}  src={el.imgsrc}/></Link>
                             <div  onClick={onOpen}className={style.prquickdiv}>Quick View</div>
                                   <Modal size={"3xl"}closeOnOverlayClick={false} isOpen={isOpen} onClose={onClose}>
                                     <ModalOverlay />
