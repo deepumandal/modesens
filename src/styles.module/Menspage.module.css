@@ -1,10 +1,11 @@
 .prmaincontainer
 {
-    border: 1px solid red;
+   
     display:flex;
     gap:5px;
     width: 100%;
-    /* overflow: hidden; */
+    margin: auto;
+    overflow: hidden;
 }
 
 .prsidebar
@@ -12,7 +13,7 @@
     width:20%;
     height:auto;
   
-    margin-right: 3%;
+    margin-left: 1%;
 }
 
 .prprodcontainer
@@ -21,7 +22,7 @@
     grid-template-columns: repeat(3,31%);
     width:80%;
     justify-content: space-between;
-    border: 1px solid teal;
+   
    
    
 }
@@ -40,7 +41,7 @@
     
     margin:auto;
     height:315px;
-    width:368px;
+    width:300px;
     cursor: pointer;
  
 }
@@ -68,11 +69,12 @@
     background-color:white;
     width:100%;
     z-index:6;
-    
     overflow-y: scroll;
     height:300px;
-  
 }
+   
+    
+    
 .prquickdiv{
     background-color:white;
    border:1px solid black;
@@ -156,12 +158,17 @@
     line-height:50px
 }
 .prselectstore
-{
+{   display:flex;
+    justify-content: center;
     height:40px;
     background-color: black;
     color:white;
-    text-align: center;
-    margin-top: 10px;
+   align-items: center;
+}
+.prpaginateparent{
+    display:flex;
+    margin-bottom:10px;
+   
 }
 .prpaginate
 {
@@ -181,6 +188,9 @@
     border-bottom: 1px solid orange;
     
  }
+ .prselectdiv{
+   margin-left:22%
+ }
 .prselect{
     text-align:end;
     border:transparent;
@@ -197,4 +207,104 @@
 .prselect>option:hover{
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     background-color:black;
+}
+
+@media all and (min-width:900px) and (max-width:1399px)
+{
+    .primgquidiv{
+    
+        margin:auto;
+        height:300px;
+        width:250px;
+        cursor: pointer;
+     
+    }
+    .primg{
+        height:300px;
+        width:180px;
+        margin:auto
+    }
+    .prmaincontainer
+{
+    /* border: 1px solid red; */
+    display:flex;
+    gap:5px;
+    width: 90%;
+    margin:auto;
+    overflow: hidden;
+}
+.prprodcontainer
+{
+    display:grid;
+    grid-template-columns: repeat(3,34%);
+    width:80%;
+    justify-content: space-between;
+    /* border: 1px solid teal; */
+   
+   
+}
+.prdesignerdiv{
+    width:65%;
+    text-align:start;
+    margin-left:25%;
+    height:100px;
+    line-height:50px;
+    
+}
+.prpaginateparent{
+    display:flex;
+    margin-bottom:10px;
+    
+    width:60%;
+    margin:auto;
+}
+.prselectdiv{
+    margin-left:20%
+  }
+
+  .prindiprop
+{   height:70%;
+    margin-top: 8%;
+   width:auto;
+    line-height: 30px;
+}
+
+}
+
+@media all and (min-width:1400px) and (max-width:1700px)
+{
+    .prmaincontainer
+{
+    
+    display:flex;
+    gap:5px;
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+.prdesignerdiv{
+    width:60%;
+    text-align:start;
+    margin-left:22%;
+    height:100px;
+    line-height:50px;
+   
+}
+.prquickdiv{
+    background-color:white;
+   border:1px solid black;
+    width:100%;
+    height:15%;
+    margin-top:-60px;
+    position:relative;
+    z-index:200;
+    display:none;
+    padding-top:2%;
+
+}
+.primg{
+    height:315px;
+    width:180px;
+    margin:auto
+}
 }

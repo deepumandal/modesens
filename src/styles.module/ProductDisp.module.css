@@ -1,0 +1,148 @@
+.primginfodiv{
+
+ width:80%;
+ margin:auto;
+ display:flex;
+ height:380px;
+ justify-content:space-between;
+ gap:20px
+}
+.prproductinfodiv
+{
+    
+    width:40%;
+    font-size:20px;
+    text-align:start;
+    font-weight:500;
+}
+.prproductinfodiv>div>div{
+    margin-bottom: 20px;
+}
+.prconcierge{
+   display:flex;
+   width:80%;
+   margin:auto;
+   margin-top:40px;
+   margin-bottom:40px
+}
+.prQandAstandalone{
+    text-align:start;
+    width:80%;
+    margin:auto;
+    margin-bottom:40px;
+    font-size:30px;
+    font-weight:500
+}
+.prQandA{
+    display:flex;
+    width:80%;
+    margin:auto;
+    justify-content:space-between;
+    height:'50px';
+    margin-bottom:30px
+}
+.prQandA>input{
+   width:80%;
+   height:40px;
+}
+.prQandA>div{
+    display:flex;
+    
+    width:15%;
+    justify-content:space-around;
+    height:auto;
+    
+}
+.prbanner
+{
+    width:80%;
+    margin:auto;
+    margin-top:40px;
+    margin-bottom:40px
+}
+.prsubscribe{
+    width:80%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between
+}
+.prdstore{
+    background-color: black;
+    color:white;
+    width:40%;
+    cursor: pointer;
+    height:50px;
+    padding-top: 2%;
+   text-align: center;
+}
+.prpost{
+    font-size:20px;
+    text-align:center;
+    padding-top:5%
+}
+.prpostparent
+{
+    border:1px solid black;
+    width:45%;
+    cursor: pointer;
+}
+.prpostparent:hover{
+    background-color: black;
+    color:white
+}
+
+.inp{
+    outline:none;
+    cursor: pointer;
+}
+.inp:focus{
+    border:1px solid aquamarine
+}
+.prsetalertbtn
+{
+        border:1px solid black;
+        width:15%;
+        display:flex;
+        justify-content:space-around;
+        height:50px;
+        align-items:center;
+        font-size: 16px;
+        cursor: pointer;
+        font-weight:500
+}
+.prsetalertbtn:hover{
+    background-color: black;
+    color:white
+}
+
+@media all and (min-width:900px) and (max-width:1300px)
+{
+    .primginfodiv{
+        margin: auto;
+        width:90%;
+        /* margin-left: 10%;
+        margin-right: 10%; */
+    }
+    .prbanner
+{
+    width:90%;
+    margin:auto;
+    margin-top:40px;
+    margin-bottom:40px;
+    /* margin-left: 10%;
+    margin-right: 10%; */
+}
+.prsubscribe{
+    width:90%;
+   
+}
+.prconcierge{
+    width:90%
+}
+.prQandAstandalone{
+    width:90%
+}
+.prQandA{
+    width:90%
+}
+}
