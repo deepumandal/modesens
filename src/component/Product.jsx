@@ -12,12 +12,22 @@ import {
   useDisclosure
 } from '@chakra-ui/react'
 export const Product = ({el}) => {
-
+  let [wished,setWished]=React.useState(false)
+let handlewishclick=()=>{
+  if(wished)
+  {
+    setWished(wished=false)
+  }
+  else{
+    setWished(wished=true)
+  }
+  
+}
   const { isOpen, onOpen, onClose } = useDisclosure()
   return (
     <div className={style.prindiv}>
                         <div className={style.primgquidiv}>
-                            <div style={{display:"flex",justifyContent:"flex-end",fontSize:"25px"}}><i class="fa-regular fa-heart"></i></div>
+                            <div style={{display:"flex",justifyContent:"flex-end",fontSize:"25px"}}><i onClick={handlewishclick} style={{color: wished && "red"}} class="fa-regular fa-heart"></i></div>
                             <img className={style.primg}  src={el.imgsrc}/>
                             <div  onClick={onOpen}className={style.prquickdiv}>Quick View</div>
                                   <Modal size={"3xl"}closeOnOverlayClick={false} isOpen={isOpen} onClose={onClose}>
@@ -28,7 +38,7 @@ export const Product = ({el}) => {
                                     <ModalBody pb={6}>
                                       <div style={{display:"flex",height:"50%",width:"100%",justifyContent:"space-around"}}>
                                         <div style={{width:"50%",height:"400px"}}>
-                                        <div style={{marginBottom:"5px",display:"flex",justifyContent:"flex-end",fontSize:"25px"}}><i class="fa-regular fa-heart"></i></div>
+                                        <div style={{marginBottom:"5px",display:"flex",justifyContent:"flex-end",fontSize:"25px"}}><i onClick={handlewishclick} style={{color: wished && "red"}}class="fa-regular fa-heart"></i></div>
                                         <div style={{display:"flex",justifyContent:"flex-end",fontSize:"25px"}}><i class="fa-regular fa-share-from-square"></i></div>
                                           <img style={{height:"80%",margin:"auto"}} src={el.imgsrc}/>
                                         </div>
