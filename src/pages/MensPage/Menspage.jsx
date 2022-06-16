@@ -119,13 +119,13 @@ export const Menspage = () => {
         dispatch(sorting(e.target.value,page))
       }
   return (
-    <div className='container m2'>
+    <div >
         <div className={style.prdesignerdiv}>
            
             <div style={{fontSize:"24px"}}><b>Designer Clothing for men</b></div>
             <p style={{fontSize:"12px",fontWeight:"500"}}>Designer clothing for men with price comparison across 500+ stores in one place. Discover the latest designer clothing for men at ModeSens.</p>
         </div>
-        <div style={{display:"flex",marginBottom:"10px"}}>
+        <div className={style.prpaginateparent}>
             <div className={style.prpaginate}>
             <div style={{display: page>1 ? "block":"none"}} onClick={()=>pagehandle(page-1)}className={style.prpageindic}><i class="fa-solid fa-angle-left"></i></div>
                 <div onClick={()=>pagehandle(1)}className={style.prpageindic}>1</div>
@@ -135,7 +135,7 @@ export const Menspage = () => {
                 <div  style={{textAlign:"center"}}>...</div>
                 <div style={{display: page>=4 ? "none":"block"}} onClick={()=>pagehandle(page+1)}className={style.prpageindic}><i class="fa-solid fa-angle-right"></i></div>
             </div>
-            <div style={{marginLeft:"22%" }}>
+            <div className={style.prselectdiv}>
                 <select onChange={(e)=>handleselction(e)}className={style.prselect}>
                     <option value="">Best Sellers</option>
                     <option value="">New Arrival</option>
