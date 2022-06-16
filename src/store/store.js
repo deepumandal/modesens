@@ -7,7 +7,7 @@ import { navReducer } from "./Navbar/navReducer";
 const rootReducer = combineReducers({
     navbar: navReducer,
     mens:mensreducer,
-    auth:authReducer
+    // auth:authReducer
 })
 
 
