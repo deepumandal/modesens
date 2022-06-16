@@ -5,7 +5,7 @@ import Partners from "../styles.module/HomePartners.module.css";
 
 const HomePartners = () => {
   return (
-    <div>
+    <div> 
       <h3 style={{
         fontSize : "24px",
         fontWeight :600,
