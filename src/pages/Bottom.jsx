@@ -24,7 +24,7 @@ const Bottom = () => {
         backgroundColor: "#f8f7f6",
         width: "1128px",
         margin: "auto",
-        height: "800px",
+        height: "600px",
         padding: "30px",
       }}
     >
