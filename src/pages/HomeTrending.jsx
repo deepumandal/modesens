@@ -4,6 +4,7 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import style from '../styles.module/NavbarTrending.module.css'
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 
 const HomeTrending = () => {
@@ -47,7 +48,10 @@ useEffect(() => {
       flexDirection : "column",
       margin: "10px"
     }}>
+      <Link to="/shop-men-clothing">
 <img className={style.imgspoffers} src={e.img}  alt="" />
+      </Link>
+        
           <div className={style.name}> {e.name} </div>
           <div className={style.about}> {e.about} </div>
           <div className={style.PriceRange}> {e.PriceRange} </div>
@@ -103,7 +107,10 @@ useEffect(() => {
         
       </OwlCarousel>
 
-      <button> More view </button>
+      <button className={style.button} style={{
+        border : "0.5px solid grey",
+        padding :" 4px 9px"
+      }}> SHOP MORE </button>
     </div>
   )
 }

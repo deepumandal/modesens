@@ -316,7 +316,10 @@ const SpecialOff = () => {
         </div>
       </OwlCarousel>
 
-      <button> More view </button>
+      <button className={style.button} style={{
+        border : "0.5px solid grey",
+        padding :" 4px 9px"
+      }}>  VIEW MORE</button>
 
     </div>
   );

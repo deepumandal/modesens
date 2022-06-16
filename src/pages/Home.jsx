@@ -5,6 +5,9 @@ import HomePartners from "./HomePartners";
 import styles from "../styles.module/home.module.css";
 import SpecialOff from "./SpecialOff";
 import HomeTrending from "./HomeTrending";
+import HomeRecentviwe from "./HomeRecentviwe";
+import Homecommuniy from "./Homecommuniy";
+import Bottom from "./Bottom";
 const Home = () => {
   return (
     <div>
@@ -15,47 +18,57 @@ const Home = () => {
       <br />
       <br />
       <br />
-<div className="container">
-<div style={{ display: "flex", justifyContent: "space-between" }}>
-        <div className={styles.lineing}></div>
-      </div>
+      <div className="container">
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <div className={styles.lineing}></div>
+        </div>
 
-      <div className={styles.centerele}> Special Offers </div>
-</div>
+        <div className={styles.centerele}> Special Offers </div>
+      </div>
 
       <br />
       <br />
       <SpecialOff />
       <br />
       <br />
-  <div className="container">
-  <div style={{ display: "flex", justifyContent: "space-between" }}>
-        <div className={styles.lineing}></div>
+      <div className="container">
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <div className={styles.lineing}></div>
+        </div>
+
+        <div className={styles.centerele}> Trending Now </div>
       </div>
 
-      <div className={styles.centerele}> Trending Now </div>
-  </div>
+      <br />
+      <br />
+      <HomeTrending />
+      <br />
+      <br />
+      <div className="container">
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <div className={styles.lineing}></div>
+        </div>
 
+        <div className={styles.centerele}> Recently Viewed </div>
+      </div>
       <br />
       <br />
-      {/* <HomeTrending /> */}
+      <HomeRecentviwe />
       <br />
       <br />
+      <div className="container">
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <div className={styles.lineing}></div>
+        </div>
+
+        <div className={styles.centerele}> Community Posts </div>
+      </div>
       <br />
       <br />
+      <Homecommuniy />
       <br />
       <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <Bottom />
     </div>
   );
 };
