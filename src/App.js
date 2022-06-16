@@ -7,6 +7,7 @@ import { Menspage } from "./pages/MensPage/Menspage";
 import Offers from "./pages/OffersPage/Offers";
 import Community from "./pages/Community/Community";
 import { Productdisplay } from "./component/Productdisplay";
+import Footer from "./component/Footer";
 function App() {
 
  
@@ -26,7 +27,7 @@ function App() {
         <Route path="/proddisplay/:description" element={<Productdisplay/>} ></Route>
         <Route path="/community" element={<Community/>}></Route>
       </Routes>
-      {/* <Offers/> */}
+     <Footer />
     </div>
   );
 }
