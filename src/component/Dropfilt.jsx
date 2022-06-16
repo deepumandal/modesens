@@ -5,7 +5,7 @@ export const Dropfilt = ({dropcontent}) => {
     <div className={style.prdesignerdropdown}>
         <div style={{display:"flex",justifyContent:"space-around",border:"1px solid red"}}>
             <input style={{width:"80%"}} placeholder='Search designers'></input>
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-magnifying-glass"> </i>
         </div>
     
         <hr style={{color:"black"}}></hr>
