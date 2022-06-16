@@ -1204,7 +1204,7 @@
             {
               "id": 3,
               "title": "DESIGNERS",
-              "items": [ 
+              "items": [
                 "GUCCI",
                 "SAINT LAURENT",
                 "VALENTINO",
@@ -1236,13 +1236,7 @@
             {
               "id": 1,
               "title": "SHOP BY CATEGORY",
-              "items": [
-                "CLOTHING",
-                "BAGS",
-                "SHOES",
-                "ACCESSORIES",
-                "GROMMING"
-              ]
+              "items": ["CLOTHING", "BAGS", "SHOES", "ACCESSORIES", "GROMMING"]
             },
             { "id": 2, "title": "SHOP BY LIST", "items": [] },
             {
@@ -1281,45 +1275,72 @@
       "categoryname": "DESIGNERS",
       "subcateg": [
         {
-          "name": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "U", "R", "S", "T", "U", "V", "Y", "W", "X", "Y"
-            ,"Z"],
-            "data": [
-              {
-                "id": 1,
-                "title": "DESIGNERS",
-                "items": [ 
-                  "GUCCI",
-                  "SAINT LAURENT",
-                  "VALENTINO",
-                  "VERSACE",
-                  "BALENCIAGA",
-                  "BURBERRY",
-                  "PRADA",
-                  "GIVENCHY",
-                  "OFF-WHITE",
-                  "ACNE-STUDIOS",
-                  "ALEXANDER MCQUEEN",
-                  "LOEWE",
-                  "AMIRI",
-                  "PLAM ANGELS",
-                  "BOTTEGA VENETA",
-                  "MAISON MARGIELA"
-                ]
-              },
-              {
-                "id": 4,
-                "title": "POPULAR CATEGORY",
-                "items": [
-                  {
-                    "imgname": "BURBERRY",
-                    "imgsrc": "https://cdn.modesens.com/banner/20210816Women-Knits-Nav.jpg"
-                  }
-                ]
-              }
-            ],
+          "name": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "R",
+            "S",
+            "T",
+            "U",
+            "V",
+            "Y",
+            "W",
+            "X",
+            "Y",
+            "Z"
+          ],
+          "data": [
+            {
+              "id": 1,
+              "title": "DESIGNERS",
+              "items": [
+                "GUCCI",
+                "SAINT LAURENT",
+                "VALENTINO",
+                "VERSACE",
+                "BALENCIAGA",
+                "BURBERRY",
+                "PRADA",
+                "GIVENCHY",
+                "OFF-WHITE",
+                "ACNE-STUDIOS",
+                "ALEXANDER MCQUEEN",
+                "LOEWE",
+                "AMIRI",
+                "PLAM ANGELS",
+                "BOTTEGA VENETA",
+                "MAISON MARGIELA"
+              ]
+            },
+            {
+              "id": 4,
+              "title": "POPULAR CATEGORY",
+              "items": [
+                {
+                  "imgname": "BURBERRY",
+                  "imgsrc": "https://cdn.modesens.com/banner/20210816Women-Knits-Nav.jpg"
+                }
+              ]
+            }
+          ],
           "id": 1
         }
-       
       ]
     },
     {
@@ -1371,7 +1392,115 @@
       ]
     }
   ],
+  "Trending": [
+    {
+      "id": 1,
+      "name" : "ALEXANDER MCQUEEN",
+      "about" : "Crossover-strap Slim-fit Stretch",
+      "PriceRange" : "€713 - €20823",
+      "store" : "15 stores",
+      "img" : "https://cdn-images.farfetch-contents.com/17/78/37/20/17783720_39317799_1000.jpg"
+    },
+    {
+      "id": 2,
+      "name" : "ALEXANDER MCQUEEN",
+      "about" : "Crossover-strap Slim-fit Stretch",
+      "PriceRange" : "€713 - €20823",
+      "store" : "15 stores",
+      "img" : "https://cdn.modesens.com/product/7298931_66?w=400&"
+    },
+    {
+      "id": 3,
+      "name" : "ALEXANDER MCQUEEN",
+      "about" : "Crossover-strap Slim-fit Stretch",
+      "PriceRange" : "€713 - €20823",
+      "store" : "15 stores",
+      "img" : "https://cdn.modesens.com/product/10535447_122?w=400&"
+    },
+    {
+      "id": 4,
+      "name" : "ALEXANDER MCQUEEN",
+      "about" : "Crossover-strap Slim-fit Stretch",
+      "PriceRange" : "€713 - €20823",
+      "store" : "15 stores",
+      "img" : "https://cdn.modesens.com/product/18444081_124?w=400&"
+    },
+    {
+      "id": 5,
+      "name" : "ALEXANDER MCQUEEN",
+      "about" : "Crossover-strap Slim-fit Stretch",
+      "PriceRange" : "€713 - €20823",
+      "store" : "15 stores",
+      "img" : "https://cdn.modesens.com/product/31715863_1?w=400&"
+    },
+    {
+      "id": 6,
+      "name" : "ALEXANDER MCQUEEN",
+      "about" : "Crossover-strap Slim-fit Stretch",
+      "PriceRange" : "€713 - €20823",
+      "store" : "15 stores",
+      "img" : "https://cdn.modesens.com/product/41449769_2?w=400&"
+    },
+    {
+      "id": 7,
+      "name" : "ALEXANDER MCQUEEN",
+      "about" : "Crossover-strap Slim-fit Stretch",
+      "PriceRange" : "€713 - €20823",
+      "store" : "15 stores",
+      "img" : "https://cdn.modesens.com/availability/49345070?w=400&"
+    },
+    {
+      "id": 8,
+      "name" : "ALEXANDER MCQUEEN",
+      "about" : "Crossover-strap Slim-fit Stretch",
+      "PriceRange" : "€713 - €20823",
+      "store" : "15 stores",
+      "img" : "https://cdn.modesens.com/availability/48383362?w=400&"
+    },
+    {
+      "id": 9,
+      "name" : "ALEXANDER MCQUEEN",
+      "about" : "Crossover-strap Slim-fit Stretch",
+      "PriceRange" : "€713 - €20823",
+      "store" : "15 stores",
+      "img" : "https://cdn.modesens.com/availability/48287774?w=400&"
+    },
+    {
+      "id": 10,
+      "name" : "ALEXANDER MCQUEEN",
+      "about" : "Crossover-strap Slim-fit Stretch",
+      "PriceRange" : "€713 - €20823",
+      "store" : "15 stores",
+      "img" : "https://cdn.modesens.com/availability/40304456?w=400&"
+    },
+    {
+      "id": 11,
+      "name" : "ALEXANDER MCQUEEN",
+      "about" : "Crossover-strap Slim-fit Stretch",
+      "PriceRange" : "€713 - €20823",
+      "store" : "15 stores",
+      "img" : "https://cdn.modesens.com/availability/37731631?w=400&"
+    },
+    {
+      "id": 12,
+      "name" : "ALEXANDER MCQUEEN",
+      "about" : "Crossover-strap Slim-fit Stretch",
+      "PriceRange" : "€713 - €20823",
+      "store" : "15 stores",
+      "img" : "https://cdn.modesens.com/availability/33352149?w=400&"
+    }
+  ],
 
+
+
+
+
+
+
+
+
+
+  
   "Mensdata": [
     {
       "relativehref": "https://modesens.com/product/off-white-x-neen-graffiti-print-short-sleeve-button-up-shirt-multicolour-40016256/",
@@ -1379,7 +1508,7 @@
       "brand": "OFF-WHITE",
       "description": "X Neen Graffiti Print Short Sleeve Button-up Shirt In Multicolour",
       "price": "$348 - $845",
-      "price2":348,
+      "price2": 348,
       "stores": "33 stores"
     },
     {
@@ -1388,7 +1517,7 @@
       "brand": "VALENTINO",
       "description": "Short-sleeve Water Sky Printed Shirt In Purple",
       "price": "$486 - $1049",
-      "price2":486,
+      "price2": 486,
       "stores": "24 stores"
     },
     {
@@ -1397,7 +1526,7 @@
       "brand": "OFF-WHITE",
       "description": "Monalisa Over Print White Hoodie",
       "price": "$284 - $710",
-      "price2":284,
+      "price2": 284,
       "stores": "20 stores"
     },
     {
@@ -1406,7 +1535,7 @@
       "brand": "CASABLANCA",
       "description": "Men's Tennis Club Sunset Silk Sport Shirt In Multicolor",
       "price": "$362 - $1022",
-      "price2":362,
+      "price2": 362,
       "stores": "19 stores"
     },
     {
@@ -1415,7 +1544,7 @@
       "brand": "CASABLANCA",
       "description": "Men's Tokyo Nights Silk Camp Shirt In Blue",
       "price": "$458 - $920",
-      "price2":458,
+      "price2": 458,
       "stores": "21 stores"
     },
     {
@@ -1424,7 +1553,7 @@
       "brand": "VERSACE",
       "description": "Silk Shorts With Heritage Baroque Print In Black",
       "price": "$505 - $1225",
-      "price2":505,
+      "price2": 505,
       "stores": "19 stores"
     },
     {
@@ -1433,7 +1562,7 @@
       "brand": "VERSACE",
       "description": "Mens Black Brand-print Slim-fit Cotton-jersey T-shirt L",
       "price": "$178 - $437",
-      "price2":178,
+      "price2": 178,
       "stores": "18 stores"
     },
     {
@@ -1442,7 +1571,7 @@
       "brand": "BURBERRY",
       "description": "Men's Parker Logo-embroidered T-shirt, White",
       "price": "$240 - $410",
-      "price2":240,
+      "price2": 240,
       "stores": "20 stores"
     },
     {
@@ -1451,7 +1580,7 @@
       "brand": "VERSACE",
       "description": "Heritage Scarf Cotton & Silk Hoodie In Black",
       "price": "$429 - $1025",
-      "price2":429,
+      "price2": 429,
       "stores": "18 stores"
     },
     {
@@ -1460,7 +1589,7 @@
       "brand": "BURBERRY",
       "description": "Beige Silk Bradestone Bermuda Shorts",
       "price": "$480 - $1050",
-      "price2":480,
+      "price2": 480,
       "stores": "18 stores"
     },
     {
@@ -1469,7 +1598,7 @@
       "brand": "VERSACE",
       "description": "Medusa Music Print Bi-colour Silk Shorts In Multicolour",
       "price": "$466 - $938",
-      "price2":466,
+      "price2": 466,
       "stores": "17 stores"
     },
     {
@@ -1478,7 +1607,7 @@
       "brand": "VALENTINO",
       "description": "Street Flowers Couture Peonies Short Sleeve Poplin Button-up Camp Shirt In Yellow",
       "price": "$438 - $1250",
-      "price2":438,
+      "price2": 438,
       "stores": "19 stores"
     },
     {
@@ -1487,7 +1616,7 @@
       "brand": "BURBERRY",
       "description": "Universal Passport Slogan Print Sleeveless Button-up Shirt In Blue",
       "price": "$567 - $1235",
-      "price2":567,
+      "price2": 567,
       "stores": "17 stores"
     },
     {
@@ -1496,7 +1625,7 @@
       "brand": "VERSACE",
       "description": "Heritage Foulard Cotton & Silk Shorts In Black",
       "price": "$420 - $925",
-      "price2":420,
+      "price2": 420,
       "stores": "16 stores"
     },
     {
@@ -1505,7 +1634,7 @@
       "brand": "BURBERRY",
       "description": "Beige Poplin Check Stretch Short Sleeve Shirt",
       "price": "$307 - $533",
-      "price2":307,
+      "price2": 307,
       "stores": "17 stores"
     },
     {
@@ -1514,7 +1643,7 @@
       "brand": "OFF-WHITE",
       "description": "Appliquéd Wool-blend Felt Varsity Jacket In Black",
       "price": "$738 - $2395",
-      "price2":738,
+      "price2": 738,
       "stores": "16 stores"
     },
     {
@@ -1523,7 +1652,7 @@
       "brand": "VALENTINO",
       "description": "Men's Logo Waves Silk Camp Shirt In Black",
       "price": "$723 - $1690",
-      "price2":723,
+      "price2": 723,
       "stores": "18 stores"
     },
     {
@@ -1532,7 +1661,7 @@
       "brand": "VERSACE",
       "description": "La Greca Monogram Print Silk Twill Shorts In Pink",
       "price": "$391 - $975",
-      "price2":391,
+      "price2": 391,
       "stores": "17 stores"
     },
     {
@@ -1541,7 +1670,7 @@
       "brand": "VERSACE",
       "description": "Men's White Other Materials T-shirt",
       "price": "$159 - $437",
-      "price2":159,
+      "price2": 159,
       "stores": "17 stores"
     },
     {
@@ -1550,7 +1679,7 @@
       "brand": "VALENTINO",
       "description": "Neon Camouflage Print S/s Shirt - Atterley In Blue",
       "price": "$361 - $990",
-      "price2":361,
+      "price2": 361,
       "stores": "16 stores"
     },
     {
@@ -1559,17 +1688,17 @@
       "brand": "AMIRI",
       "description": "Rum Label Silk Twill Bomber Jacket In Multicolor",
       "price": "$1179 - $2865",
-      "price2":1179,
+      "price2": 1179,
       "stores": "16 stores"
     },
-    
+
     {
       "relativehref": "https://modesens.com/product/jw-anderson-jwa-contrasting-logo-swim-shorts-blue-37992601/",
       "imgsrc": "https://res.cloudinary.com/ssenseweb/image/upload/b_white%2Cc_lpad%2Cg_center%2Ch_960%2Cw_960/c_scale%2Ch_680/f_auto%2Cdpr_1.0/221477M208001_1.jpg",
       "brand": "JW ANDERSON",
       "description": "Jwa Contrasting Logo Swim Shorts In Blue",
       "price": "$181 - $370",
-      "price2":181,
+      "price2": 181,
       "stores": "15 stores"
     },
     {
@@ -1578,7 +1707,7 @@
       "brand": "ETRO",
       "description": "Paisley Bandana Print Short-sleeved Shirt In Blue",
       "price": "$448 - $1130",
-      "price2":448,
+      "price2": 448,
       "stores": "14 stores"
     },
     {
@@ -1587,7 +1716,7 @@
       "brand": "VALENTINO",
       "description": "Vltn Tag Neon Camo Printed T-shirt In Blue",
       "price": "$260 - $590",
-      "price2":260,
+      "price2": 260,
       "stores": "15 stores"
     },
     {
@@ -1596,7 +1725,7 @@
       "brand": "VERSACE",
       "description": "Cotton T-shirt With Frontal Logo - Atterley In Black",
       "price": "$185 - $437",
-      "price2":185,
+      "price2": 185,
       "stores": "14 stores"
     },
 
@@ -1606,7 +1735,7 @@
       "brand": "VALENTINO",
       "description": "Vlogo Signature Print Denim Shirt In Light Blue",
       "price": "$660 - $1390",
-      "price2":660,
+      "price2": 660,
       "stores": "12 stores"
     },
     {
@@ -1615,7 +1744,7 @@
       "brand": "VERSACE",
       "description": "Men's Royal Rebellion Silk Shorts In Multicolour",
       "price": "$466 - $925",
-      "price2":466,
+      "price2": 466,
       "stores": "13 stores"
     },
     {
@@ -1624,7 +1753,7 @@
       "brand": "VERSACE",
       "description": "Logo Printed Zip Sweatshirt Hoodie In Black",
       "price": "$463 - $925",
-      "price2":463,
+      "price2": 463,
       "stores": "14 stores"
     },
     {
@@ -1633,7 +1762,7 @@
       "brand": "CASABLANCA",
       "description": "Green And White Monogram Silk Bermuda Shorts",
       "price": "$395 - $845",
-      "price2":395,
+      "price2": 395,
       "stores": "15 stores"
     },
     {
@@ -1642,7 +1771,7 @@
       "brand": "VALENTINO",
       "description": "Swimsuit With All-over Neon Camou Print In Blue",
       "price": "$244 - $850",
-      "price2":244,
+      "price2": 244,
       "stores": "14 stores"
     },
     {
@@ -1651,7 +1780,7 @@
       "brand": "BURBERRY",
       "description": "Caxton Checked Cotton Shirt In White",
       "price": "$294 - $490",
-      "price2":294,
+      "price2": 294,
       "stores": "12 stores"
     },
     {
@@ -1660,7 +1789,7 @@
       "brand": "BURBERRY",
       "description": "Men's Guildes Signature Check Swim Trunks In Blue",
       "price": "$329 - $411",
-      "price2":329,
+      "price2": 329,
       "stores": "15 stores"
     },
     {
@@ -1669,7 +1798,7 @@
       "brand": "JW ANDERSON",
       "description": "J.w. Anderson Men's Orange Other Materials T-shirt",
       "price": "$72 - $187",
-      "price2":72,
+      "price2": 72,
       "stores": "12 stores"
     },
     {
@@ -1678,7 +1807,7 @@
       "brand": "OFF-WHITE",
       "description": "Black Quilted Down Jacket With Belt And Logo",
       "price": "$959 - $2430",
-      "price2":959,
+      "price2": 959,
       "stores": "14 stores"
     },
     {
@@ -1687,7 +1816,7 @@
       "brand": "VALENTINO",
       "description": "Vltn Tag Electric City Hoodie Sweatshirt In Multicolour",
       "price": "$918 - $1650",
-      "price2":918,
+      "price2": 918,
       "stores": "14 stores"
     },
     {
@@ -1696,7 +1825,7 @@
       "brand": "OFF-WHITE",
       "description": "Caravaggio Crowning Graphic-print Cotton-jersey Hoody In Black",
       "price": "$304 - $680",
-      "price2":304,
+      "price2": 304,
       "stores": "14 stores"
     },
     {
@@ -1705,7 +1834,7 @@
       "brand": "VERSACE",
       "description": "Mens Optical White Brand-print Slim-fit Cotton-jersey T-shirt S",
       "price": "$182 - $409",
-      "price2":182,
+      "price2": 182,
       "stores": "13 stores"
     },
     {
@@ -1714,7 +1843,7 @@
       "brand": "AMIRI",
       "description": "Bandana B-ball Relaxed-fit Cotton And Cashmere-blend Hoody In Black",
       "price": "$620 - $1435",
-      "price2":620,
+      "price2": 620,
       "stores": "14 stores"
     },
     {
@@ -1723,7 +1852,7 @@
       "brand": "JW ANDERSON",
       "description": "Monogram Logo Nylon Swim Trunks In Pink",
       "price": "$192 - $370",
-      "price2":192,
+      "price2": 192,
       "stores": "12 stores"
     },
     {
@@ -1732,17 +1861,17 @@
       "brand": "JW ANDERSON",
       "description": "Mens Black Anchor Brand-embroidered Cotton-jersey T-shirt M",
       "price": "$80 - $187",
-      "price2":80,
+      "price2": 80,
       "stores": "13 stores"
     },
-    
+
     {
       "relativehref": "https://modesens.com/product/versace-men-acid-bouquet-silk-tank-top-fuchsia-44602817/",
       "imgsrc": "https://cdn.modesens.com/availability/44762365?w=400&",
       "brand": "VERSACE",
       "description": "Men's Acid Bouquet Silk Tank Top In Fuchsia",
       "price": "$810 - $1675",
-      "price2":810,
+      "price2": 810,
       "stores": "13 stores"
     },
     {
@@ -1751,7 +1880,7 @@
       "brand": "VERSACE",
       "description": "Black 'la Coupe Des Dieux' Swim Shorts",
       "price": "$223 - $575",
-      "price2":223,
+      "price2": 223,
       "stores": "13 stores"
     },
     {
@@ -1760,7 +1889,7 @@
       "brand": "VERSACE",
       "description": "Men's Black Cotton T-shirt",
       "price": "$178 - $437",
-      "price2":178,
+      "price2": 178,
       "stores": "12 stores"
     },
     {
@@ -1769,7 +1898,7 @@
       "brand": "VERSACE",
       "description": "La Coupe Des Dieux Bermuda Shorts With Print In Black",
       "price": "$475 - $1025",
-      "price2":475,
+      "price2": 475,
       "stores": "13 stores"
     },
     {
@@ -1778,7 +1907,7 @@
       "brand": "JW ANDERSON",
       "description": "J.w. Anderson Men's White Other Materials T-shirt",
       "price": "$87 - $187",
-      "price2":87,
+      "price2": 87,
       "stores": "15 stores"
     },
     {
@@ -1787,7 +1916,7 @@
       "brand": "CASABLANCA",
       "description": "Men's Masao San Embroidered Souvenir Jacket In Black",
       "price": "$594 - $1682",
-      "price2":594,
+      "price2": 594,
       "stores": "12 stores"
     },
     {
@@ -1796,7 +1925,7 @@
       "brand": "VERSACE",
       "description": "Black Logo-print Crewneck Sweatshirt",
       "price": "$298 - $692",
-      "price2":298,
+      "price2": 298,
       "stores": "12 stores"
     },
     {
@@ -1805,7 +1934,7 @@
       "brand": "VALENTINO",
       "description": "Intarsia Pattern Black Knit Jumper In Blue",
       "price": "$556 - $1390",
-      "price2":556,
+      "price2": 556,
       "stores": "13 stores"
     },
     {
@@ -1814,7 +1943,7 @@
       "brand": "BURBERRY",
       "description": "Somerton Nova-check Cotton-blend Poplin Shirt In Dark Blue",
       "price": "$339 - $490",
-      "price2":339,
+      "price2": 339,
       "stores": "14 stores"
     },
     {
@@ -1823,7 +1952,7 @@
       "brand": "OFF-WHITE",
       "description": "Arrow Diag Embroidered Grey Cotton-blend Jumper",
       "price": "$296 - $710",
-      "price2":296,
+      "price2": 296,
       "stores": "12 stores"
     },
     {
@@ -1832,7 +1961,7 @@
       "brand": "BURBERRY",
       "description": "Cotton Universal Passport Oversized T-shirt In White",
       "price": "$329 - $731",
-      "price2":329,
+      "price2": 329,
       "stores": "13 stores"
     },
     {
@@ -1841,7 +1970,7 @@
       "brand": "CASABLANCA",
       "description": "Geometric-print Drawstring-waist Silk Shorts In Red",
       "price": "$362 - $765",
-      "price2":362,
+      "price2": 362,
       "stores": "13 stores"
     },
     {
@@ -1850,7 +1979,7 @@
       "brand": "CANADA GOOSE",
       "description": "Men's Crofton Lightweight Quilted Packable Jacket In Dark Blue",
       "price": "$578 - $873",
-      "price2":578,
+      "price2": 578,
       "stores": "12 stores"
     },
     {
@@ -1859,7 +1988,7 @@
       "brand": "VALENTINO",
       "description": "Hoodie With Men's Garden Floral Embroidery In Black",
       "price": "$527 - $2390",
-      "price2":527,
+      "price2": 527,
       "stores": "14 stores"
     },
     {
@@ -1868,17 +1997,17 @@
       "brand": "OFF-WHITE",
       "description": "Allover Logo Intarsia Sweater Knitwear Man - Atterley In Black",
       "price": "$417 - $1172",
-      "price2":417,
+      "price2": 417,
       "stores": "13 stores"
     },
-    
+
     {
       "relativehref": "https://modesens.com/product/amiri-distressed-logo-appliqued-cotton-jersey-hoodie-black-38530965/",
       "imgsrc": "https://cdn.modesens.com/availability/44762365?w=400&",
       "brand": "AMIRI",
       "description": "Distressed Logo-appliquéd Cotton-jersey Hoodie In Black",
       "price": "$418 - $894",
-      "price2":418,
+      "price2": 418,
       "stores": "13 stores"
     },
     {
@@ -1887,7 +2016,7 @@
       "brand": "VERSACE",
       "description": "Men's Black Cotton Sweatshirt",
       "price": "$328 - $733",
-      "price2":328,
+      "price2": 328,
       "stores": "12 stores"
     },
     {
@@ -1896,7 +2025,7 @@
       "brand": "VERSACE",
       "description": "Mens White Graphic-print Crewneck Cotton-jersey T-shirt S",
       "price": "$178 - $431",
-      "price2":178,
+      "price2": 178,
       "stores": "14 stores"
     },
     {
@@ -1905,7 +2034,7 @@
       "brand": "THOM BROWNE",
       "description": "Men's Classic Crewneck Sweatshirt With Striped Sleeve In Light Grey",
       "price": "$530 - $750",
-      "price2":530,
+      "price2": 530,
       "stores": "13 stores"
     },
     {
@@ -1914,7 +2043,7 @@
       "brand": "JW ANDERSON",
       "description": "Anchor-embroidered Relaxed-fit Cotton-poplin Shirt In Yellow",
       "price": "$180 - $400",
-      "price2":180,
+      "price2": 180,
       "stores": "12 stores"
     },
     {
@@ -1923,7 +2052,7 @@
       "brand": "BURBERRY",
       "description": "Cotton T-shirt With Bicolor Print - Atterley In White",
       "price": "$311 - $652",
-      "price2":311,
+      "price2": 311,
       "stores": "11 stores"
     },
     {
@@ -1932,7 +2061,7 @@
       "brand": "VERSACE",
       "description": "Blue And Black Jacquard Wool Sweater",
       "price": "$450 - $1165",
-      "price2":450,
+      "price2": 450,
       "stores": "11 stores"
     },
     {
@@ -1941,7 +2070,7 @@
       "brand": "AMIRI",
       "description": "Straight-leg Floral-print Silk-twill Drawstring Shorts In Black",
       "price": "$515 - $1240",
-      "price2":515,
+      "price2": 515,
       "stores": "14 stores"
     },
     {
@@ -1950,7 +2079,7 @@
       "brand": "VALENTINO",
       "description": "Water Sky Print Swim Shorts In Blue",
       "price": "$346 - $690",
-      "price2":346,
+      "price2": 346,
       "stores": "13 stores"
     },
     {
@@ -1959,7 +2088,7 @@
       "brand": "VALENTINO",
       "description": "Abstract-pattern Tapered Woven Jogging Bottoms In Black/multicolor",
       "price": "$662 - $1550",
-      "price2":662,
+      "price2": 662,
       "stores": "13 stores"
     },
     {
@@ -1968,7 +2097,7 @@
       "brand": "BURBERRY",
       "description": "Fitzroy Reversible Checked Cotton-twill Jacket In Beige",
       "price": "$1066 - $1890",
-      "price2":1066,
+      "price2": 1066,
       "stores": "13 stores"
     },
     {
@@ -1977,12 +2106,12 @@
       "brand": "OFF-WHITE",
       "description": "Men's Black Other Materials Cardigan",
       "price": "$602 - $1280",
-      "price2":602,
+      "price2": 602,
       "stores": "12 stores"
     }
   ],
 
-  "OffersData":[
+  "OffersData": [
     {
       "d_block_href": "https://modesens.com/product/tranlink/?link=https%3A%2F%2Fwww.ssense.com%2Fen-us%2Fwomen%2Fsale",
       "coupone_merchant_logo_src": "https://cdn.modesens.com/merchant/ssense-logo.png?w=400&",
@@ -3146,5 +3275,4 @@
       "b_size": "06/13/2022 - 06/19/2022"
     }
   ]
-
 }
