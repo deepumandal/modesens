@@ -9,6 +9,7 @@
     flex-direction: row;
     justify-content: center;
     gap: 15px;
+    box-shadow: "rgba(0, 0, 0, 0.16) 0px 1px 4px",
 }
 .controlleft{
     width: 30px;
