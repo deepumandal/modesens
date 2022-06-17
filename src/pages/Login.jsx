@@ -3,7 +3,25 @@ import './login.css'
 import {useDispatch} from 'react-redux'
 import { SignupApi } from '../auth/auth.actios'
 
+import {
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalBody,
+  ModalCloseButton,
+  useDisclosure,Button
+} from '@chakra-ui/react'
+
+ 
+
+
 const Login = () => {
+
+
+  const { isOpen, onOpen, onClose } = useDisclosure()
+
+
+
   const [toogle, settoogle] = useState(false);
   const [logindata, setlogindata] = useState({});
   const dispatch=useDispatch();
@@ -32,10 +50,18 @@ const Login = () => {
   }
   return (
     <div>
-        <div className='outer-div'>
+
+<Button onClick={onOpen}>Open Modal</Button>
+
+      <Modal isOpen={isOpen} onClose={onClose}  >
+        <ModalOverlay />
+        <ModalContent maxW="1000px" maxHeight='2000px' textAlign={'center'} >
+          <ModalCloseButton />
+          <ModalBody >
+          <div className='outer-div'>
             <div className='innerone-div' >
                 <div className='index-login' >
-                <img style={{width:'90%', height:'50px'}} src="https://cdn.modesens.com/static/img/20220413whitelogo-assistant-en.svg" alt="" />
+                <img style={{width:'100%', height:'50px'}} src="https://cdn.modesens.com/static/img/20220413whitelogo-assistant-en.svg" alt="" />
                 <p style={{fontSize:"15px"}}><i style={{marginRight:'20px'}} class="fa-solid fa-bag-shopping"></i>COMPARE ACROSS 500+ STORES </p>
                 <p style={{fontSize:"15px"}}><i style={{marginRight:'20px'}} class="fa-solid fa-bell" ></i>GET ALERTS ON YOUR ITEMS</p>
                 <p style={{fontSize:"15px"}}><i style={{marginRight:'20px'}} class="fa-solid fa-clipboard"></i>SAVE YOUR SEARCHS</p>
@@ -85,7 +111,7 @@ const Login = () => {
                         <div style={{display:'flex'}}>
                         <input type="checkbox" style={{width:'15px',heigth:'15px'}} className='checkbox' name='check'/>
                         <label htmlFor="check">
-                        <p style={{fontSize:'12px'}}>Subscribe to personalized sale updates and offers</p>
+                        <p style={{fontSize:'12px',marginTop:'12px',marginLeft:'15px'}}>Subscribe to personalized sale updates and offers</p>
                         </label>
                       
                         </div>
@@ -117,6 +143,9 @@ const Login = () => {
                 </div>
             </div>
         </div>
+          </ModalBody>
+        </ModalContent>
+      </Modal>
     </div>
   )
 }
