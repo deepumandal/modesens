@@ -3,13 +3,18 @@
 .navbar{
     display:flex;
     justify-content:space-between;
-    /* border:1px solid red; */
-    width: 1150px;
-    position: sticky;  
-    padding: 1vh;
+    border:1px solid red;
+    width: 100%;
+    position: fixed;
+    background-color:  white;
+    z-index: 100;
+    top: 0;  
+    left: 0%;
+    right: 0%;
+   
 }
 
-@media only screen   and (max-width: 1440px) and (min-width: 1152px)  {
+@media only screen   and (max-width: 1480px) and (min-width: 1360px)  {
     .navbar{
         display:flex;
         justify-content:space-between;
@@ -18,20 +23,21 @@
     }
   }
 
-  /* @media only screen and (min-width: 1440px) {
+   @media only screen and (min-width: 1500px) {
     .navbar{
         display:flex;
         justify-content:space-between;
         border:1px solid red;
-        width: 98%;
+        width: 1500px;
+        margin: auto;
     }
 
-    media works pending here
-  } */ 
+    /* media works pending here */
+  } 
 
 
 #leftdiv{
-    /* border: 1px solid black; */
+    border: 1px solid black;
     width: 65%;
     justify-content: space-between;
     display: flex;
@@ -40,18 +46,27 @@
     flex-direction: flex-start;
 }
 #rightdiv{
-    /* border: 1px solid black; */
+    border: 1px solid black;
     width: 20%;
     margin-top: 10px;
     /* flex-direction: flex-end; */
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 #logo{
   padding: 5px;
    width: 20%;
   
 }
+.country{
+    height: 20px;
+    width: 20px;
+}
+
+
+
+
 .subcateg{
     margin: 5px;
     font-family: 'Fira Sans', sans-serif;
@@ -69,8 +84,10 @@
     font-family: 'Fira Sans', sans-serif;
     font-size: 12px;
     height: fit-content;
-    margin-right: -11px;
+    margin-right: -5px;
     letter-spacing: 0.1px;
+    /* border: 1px solid red; */
+   
 }
 
 /* deopdown starts here  */
