@@ -26,6 +26,7 @@ const Bottom = () => {
         margin: "auto",
         height: "600px",
         padding: "30px",
+        
       }}
     >
 {/*  update were pending here */}

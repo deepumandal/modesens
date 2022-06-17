@@ -1,24 +1,49 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useSelector } from "react-redux";
 import style from "./Loginmouseover.module.css";
+
+import {
+
+  useDisclosure
+} from '@chakra-ui/react'
+
 const Loginmouseover = (props) => {
   const setLoginmouse = props.props.setLoginmouse;
   console.log(props);
+
+
+  const { err, isAuth} = useSelector((state)=>state.auth)
+const {onClose } = useDisclosure()
+
+  useEffect(() => {
+    
+  if(isAuth){
+    onClose()
+  }
+   
+  }, [isAuth])
+  
+  
+
   return (
     <div
       className={style.main}
       onMouseLeave={() => setLoginmouse(false)}
     >
-      <div className={style.dynamic}>
+      {
+        !isAuth && <div className={style.dynamic}>
+        
         <div>
-          <img
-            style={{
-              height: "auto",
-              width: "30px",
-            }}
-            src="https://cdn.modesens.com/static/img/20180905footer_logo.svg"
-            alt=""
-          />
-        </div>
+        <img
+          style={{
+            height: "auto",
+            width: "30px",
+          }}
+          src="https://cdn.modesens.com/static/img/20180905footer_logo.svg"
+          alt=""
+        />
+      </div>     
+    
         <div>
           <div>
             <p style={{
@@ -39,6 +64,7 @@ const Loginmouseover = (props) => {
           >signup to unlock all benefits</div>
         </div>
       </div>
+      }
       <div className={style.My}>
         <p>My Likes</p>
         <p>My Alerts</p>
@@ -69,7 +95,12 @@ const Loginmouseover = (props) => {
         }}
       />
 
-      <p>Log In</p>
+      <p onClick={props.props.onOpen}>
+        {
+          isAuth ? "Sign out" : "Log In"
+        }
+        
+        </p>
     </div>
   );
 };

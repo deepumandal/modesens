@@ -20,7 +20,7 @@ switch(type){
     }
 
     case NAVBAR_DATA_SUCCESS:{
-        // console.log(payload)
+        //  console.log(payload)
         return {
             ...state,
             navdata: payload,

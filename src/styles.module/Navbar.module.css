@@ -45,7 +45,7 @@
 
 
 #leftdiv{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 65%;
     justify-content: space-between;
     display: flex;
@@ -102,7 +102,7 @@
 
 .dropdown{
 
-    border: 1px solid red;
+    /* border: 1px solid red; */
     position: fixed;
     width: 1024px;
     margin: auto;
@@ -113,6 +113,32 @@
     left: 0;
     right: 0;    
 }
+
+.subtparent{
+    /* border : 1px solid red; */
+    display: flex;
+    padding: 10px;
+}
+.subtparent> li{
+    margin-left: 10px;
+    margin: 5px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 12px;
+    height: fit-content;
+    margin-right: 10px;
+    letter-spacing: 0.1px;
+}
+
+
+.subtparent> li:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
 
 /* special offers home page */
 

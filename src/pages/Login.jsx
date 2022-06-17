@@ -1,7 +1,6 @@
 import React,{useState} from 'react'
 import './login.css'
 import {useDispatch} from 'react-redux'
-import { SignupApi } from '../auth/auth.actios'
 
 import {
   Modal,
@@ -11,6 +10,7 @@ import {
   ModalCloseButton,
   useDisclosure,Button
 } from '@chakra-ui/react'
+import { SignupApi } from '../store/Login/auth.action'
 
  
 

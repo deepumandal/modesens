@@ -8,6 +8,7 @@ import Offers from "./pages/OffersPage/Offers";
 import Community from "./pages/Community/Community";
 import { Productdisplay } from "./component/Productdisplay";
 import Footer from "./component/Footer";
+import Login from "./pages/Login";
 function App() {
 
  
