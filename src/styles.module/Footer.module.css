@@ -1,7 +1,9 @@
+
+
 .main{
     width: 1137px;
     /* border: 1px solid red; */
-    height: 400px;
+    height: auto;
     margin: auto;
     overflow: hidden;
 }
@@ -125,3 +127,34 @@ padding-left: 9px;
 width: 43px;
     
 }
+
+
+
+@media only screen   and (max-width: 1480px) and (min-width: 1360px)  {
+    .main{
+        display:flex;
+        justify-content:space-between;
+        /* border:1px solid red; */
+        flex-direction: column;
+        width: 100%;
+    }
+    .dropdown{
+        width: 80%;
+    }
+  }
+
+   @media only screen and (min-width: 1500px) {
+    .main{
+        display:flex;
+        justify-content:space-between;
+        /* border:1px solid red; */
+        width: 1400px;
+        margin: auto;
+    }
+    .dropdown{
+        width: 100%;
+        width: 1500px;
+    }
+
+    /* media works pending here */
+  } 
