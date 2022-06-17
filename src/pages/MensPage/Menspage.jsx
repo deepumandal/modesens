@@ -136,7 +136,7 @@ export const Menspage = () => {
                 <div style={{display: page>=4 ? "none":"block"}} onClick={()=>pagehandle(page+1)}className={style.prpageindic}><i class="fa-solid fa-angle-right"></i></div>
             </div>
             <div className={style.prselectdiv}>
-                <select onChange={(e)=>handleselction(e)}className={style.prselect}>
+                <select onFocus={"this.backgroundColor=black"}  onChange={(e)=>handleselction(e)}className={style.prselect}>
                     <option value="">Best Sellers</option>
                     <option value="">New Arrival</option>
                     <option value="desc">Highest Price</option>
@@ -156,7 +156,7 @@ export const Menspage = () => {
                         <div>Reset</div>
                     </div>
                    <div style={{marginTop:"10px",marginBottom:"10px"}}>
-                   <div className={style.prcatcondgen}onClick={()=>handlegclick(gclick,setGclick)}>Gender:Men </div>
+                   <div style={{display:"flex",justifyContent:"space-between"}} className={style.prcatcondgen}onClick={()=>handlegclick(gclick,setGclick)}>Gender:Men <span><i class="fa-solid fa-caret-down"></i></span> </div>
                     { gclick && (<div className={style.prdropdown_firstthree}>
                                 { gender.map((el)=>(
                                         <div  style={{textAlign:"start"}}>{el}</div>
@@ -164,7 +164,7 @@ export const Menspage = () => {
                                 </div>)
                     }
                    
-                    <div className={style.prcatcondgen} onClick={()=>handlecondclick(condclick,setCondclick)}>Condition:New</div>
+                    <div style={{display:"flex",justifyContent:"space-between"}} className={style.prcatcondgen} onClick={()=>handlecondclick(condclick,setCondclick)}>Condition:New <span><i class="fa-solid fa-caret-down"></i></span></div>
                     { condclick && (<div  className={style.prdropdown_firstthree}>
                                     { condition.map((el)=>(
                                         <div  style={{textAlign:"start"}}>{el}</div>
@@ -172,7 +172,7 @@ export const Menspage = () => {
                                     </div>)
                     }
                     
-                    <div className={style.prcatcondgen} onClick={()=>handlecatclick(catclick,setCatclick)}>Category:Clothing</div>
+                    <div style={{display:"flex",justifyContent:"space-between"}} className={style.prcatcondgen} onClick={()=>handlecatclick(catclick,setCatclick)}>Category:Clothing <span><i class="fa-solid fa-caret-down"></i></span></div>
                    </div>
                     { catclick && ( <div >
                                     <Mensdropdown dropcontent={catdata}/>
@@ -185,24 +185,28 @@ export const Menspage = () => {
                         <div>My saved Searches</div>
                     </div>
                     <div className={style.prheavyfilters}>
-                        <div onClick={categorydrop}>CATEGORY
+                        <div style={{display:"flex",justifyContent:"space-between"}}onClick={categorydrop}>CATEGORY<span>{categories?<i class="fa-solid fa-angle-up"></i>:<i class="fa-solid fa-angle-down"></i>}</span></div>
+                        {!categories&&<hr></hr>}
                         {categories  &&  <div style={{overflow:"hidden"}}className={style.prdesignerdropdown}>
                                         { catdata?.map((el)=>(
                                           <div style={{display:"flex",justifyContent:"space-between",fontSize:"12px",marginBottom:"15px"}}>
                                           <div style={{width:"80%",color:"#979cb5"}}>{el.name}</div>
+                                          <hr></hr>
                                           </div>
+                                          
                                           ))
                                         }  
-                                        
+                                       
                                       </div>} 
-                    </div>
+                    
        
        
    
                     
                         
                     
-                        <div onClick={designerdrop}>DESIGNER</div>
+                        <div style={{display:"flex",justifyContent:"space-between"}} onClick={designerdrop}>DESIGNER <span>{designer?<i class="fa-solid fa-angle-up"></i>:<i class="fa-solid fa-angle-down"></i>}</span></div>
+                        {!designer&&<hr></hr>}
                         {designer &&<div>
                                     <div style={{display:"flex",justifyContent:"space-around"}}>
                                     <input style={{width:"80%"}} placeholder='Search designers'></input>
@@ -213,7 +217,8 @@ export const Menspage = () => {
                         { designer &&<Dropfilt dropcontent={designers}/>
                         }
 
-                        <div onClick={sizedropdrop}>SIZE</div>
+                        <div style={{display:"flex",justifyContent:"space-between"}} onClick={sizedropdrop}>SIZE<span>{sizedrop?<i class="fa-solid fa-angle-up"></i>:<i class="fa-solid fa-angle-down"></i>}</span></div>
+                        {!sizedrop&&<hr></hr>}
                         {sizedrop && <div>
                                     <div style={{display:"flex",justifyContent:"space-around",fontSize:"15px",color:"#979cb5"}}>
                                         <div style={{width:"80%"}} >My Sizes</div>
@@ -225,9 +230,11 @@ export const Menspage = () => {
                         }
                         {sizedrop &&<Dropfilt dropcontent={size}/>}
 
-                        <div>COLOR</div>
+                        <div style={{display:"flex",justifyContent:"space-between"}}>COLOR<span><i class="fa-solid fa-angle-down"></i></span></div>
+                        {<hr></hr>}
 
-                        <div onClick={pricergdropdrop}>PRIZE RANGE</div>
+                        <div style={{display:"flex",justifyContent:"space-between"}} onClick={pricergdropdrop}>PRIZE RANGE<span>{pricergdrop?<i class="fa-solid fa-angle-up"></i>:<i class="fa-solid fa-angle-down"></i>}</span></div>
+                        {!pricergdrop&&<hr></hr>}
                         {pricergdrop &&  <RangeSlider    aria-label={["min", "max"]} min={72} max={2780} defaultValue={[10, 30]} onChangeEnd={(val) => console.log(val)}>
                                             <RangeSliderTrack>
                                             <RangeSliderFilledTrack />
@@ -244,7 +251,8 @@ export const Menspage = () => {
         
                                             
 
-                        <div onClick={saledropdrop}>ON SALE</div>
+                        <div style={{display:"flex",justifyContent:"space-between"}} onClick={saledropdrop}>ON SALE<span>{saledrop?<i class="fa-solid fa-angle-up"></i>:<i class="fa-solid fa-angle-down"></i>}</span></div>
+                        {!saledrop&&<hr></hr>}
                         {saledrop &&  <RangeSlider    aria-label={["min", "max"]} min={72} max={2780} defaultValue={[10, 30]} onChangeEnd={(val) => console.log(val)}>
                                             <RangeSliderTrack>
                                             <RangeSliderFilledTrack />
@@ -255,7 +263,8 @@ export const Menspage = () => {
                         }
 
 
-                        <div onClick={storedropdrop}>STORE</div>
+                        <div style={{display:"flex",justifyContent:"space-between"}} onClick={storedropdrop}>STORE<span>{storedrop?<i class="fa-solid fa-angle-up"></i>:<i class="fa-solid fa-angle-down"></i>}</span></div>
+                        {!storedrop &&<hr></hr>}
                         {storedrop &&<div>
                                     <div style={{display:"flex",justifyContent:"space-around"}}>
                                     <input style={{width:"80%"}} placeholder='Search Stores'></input>
@@ -267,7 +276,7 @@ export const Menspage = () => {
 
 
 
-                        <div>KEYWORD</div>
+                        <div style={{display:"flex",justifyContent:"space-between"}}>KEYWORD<span><i class="fa-solid fa-angle-down"></i></span></div>
                     </div>
                 </div>
             </div>

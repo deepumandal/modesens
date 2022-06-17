@@ -46,7 +46,7 @@ let handlewishclick=()=>{
                                         <div  style={{width:"40%"}}>
                                           <div style={{fontSize:"18px",fontWeight:"600",marginBottom:"20px"}}>{el.brand}</div>
                                           <div style={{fontSize:"14px",fontWeight:"600",marginBottom:"20px"}}>{el.description}</div>
-                                          <div style={{fontSize:"20px",fontWeight:"600",marginBottom:"20px"}}>{el.price}</div>
+                                          <div style={{fontSize:"14px",fontWeight:"600",marginBottom:"20px"}}>{el.price}</div>
                                           <div className={style.prselectstore}><Link style={{color:"white"}}to={`/proddisplay/${el.description}`}>BUY FROM STORE</Link></div>
                                         </div>
                                       </div>
@@ -63,10 +63,10 @@ let handlewishclick=()=>{
                         </div>
                       
                         <div className={style.prindiprop}>
-                        <div>{el.brand}</div>
-                        <p  style={{width:"100%",display:"inline"}}>{el.description}</p>
-                        <div>{el.price}</div>
-                        <div>{el.stores}</div>
+                        <div style={{fontSize:"14px",fontWeight:"600"}}>{el.brand}</div>
+                        <p  style={{width:"100%",display:"inline",fontSize:"14px",color:"grey"}}>{el.description}</p>
+                        <div style={{fontSize:"14px",fontWeight:"600"}}>{el.price}</div>
+                        <div style={{fontSize:"14px",color:"grey"}}>{el.stores}</div>
                         </div>
 </div>
   )
