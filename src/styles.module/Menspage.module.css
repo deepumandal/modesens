@@ -19,7 +19,7 @@
 .prprodcontainer
 {
     display:grid;
-    grid-template-columns: repeat(3,31%);
+    grid-template-columns: repeat(3,33%);
     width:80%;
     justify-content: space-between;
    
@@ -214,14 +214,31 @@
     .primgquidiv{
     
         margin:auto;
-        height:300px;
+        height:280px;
         width:250px;
         cursor: pointer;
      
     }
+    .prsidebar
+{
+    width:20%;
+    height:auto;
+  
+   
+}
+    .prprodcontainer
+{
+    display:grid;
+    grid-template-columns: repeat(3,33%);
+    width:75%;
+    justify-content: space-between;
+   
+   
+   
+}
     .primg{
-        height:300px;
-        width:180px;
+        height:280px;
+        width:160px;
         margin:auto
     }
     .prmaincontainer
@@ -229,26 +246,18 @@
     /* border: 1px solid red; */
     display:flex;
     gap:5px;
-    width: 90%;
+    width: 98%;
     margin:auto;
     overflow: hidden;
 }
-.prprodcontainer
-{
-    display:grid;
-    grid-template-columns: repeat(3,34%);
-    width:80%;
-    justify-content: space-between;
-    /* border: 1px solid teal; */
-   
-   
-}
+
 .prdesignerdiv{
-    width:65%;
+    width:75%;
     text-align:start;
-    margin-left:25%;
+    margin-left:22%;
     height:100px;
     line-height:50px;
+ 
     
 }
 .prpaginateparent{
