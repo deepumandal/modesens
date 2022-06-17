@@ -3,7 +3,7 @@
 .navbar{
     display:flex;
     justify-content:space-between;
-    border:1px solid red;
+    /* border:1px solid red; */
     width: 100%;
     position: fixed;
     background-color:  white;
@@ -11,6 +11,7 @@
     top: 0;  
     left: 0%;
     right: 0%;
+    padding: 3px;
    
 }
 
@@ -21,15 +22,22 @@
         /* border:1px solid red; */
         width: 100%;
     }
+    .dropdown{
+        width: 80%;
+    }
   }
 
    @media only screen and (min-width: 1500px) {
     .navbar{
         display:flex;
         justify-content:space-between;
-        border:1px solid red;
-        width: 1500px;
+        /* border:1px solid red; */
+        width: 1400px;
         margin: auto;
+    }
+    .dropdown{
+        width: 100%;
+        width: 1500px;
     }
 
     /* media works pending here */
@@ -46,7 +54,7 @@
     flex-direction: flex-start;
 }
 #rightdiv{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 20%;
     margin-top: 10px;
     /* flex-direction: flex-end; */
@@ -93,11 +101,17 @@
 /* deopdown starts here  */
 
 .dropdown{
-    width: 100%;
+
     border: 1px solid red;
-    position: absolute;
-    width: 1224px;
+    position: fixed;
+    width: 1024px;
     margin: auto;
+    height: 50px;
+    z-index: 10;
+    background-color: white;
+    top: 60px;
+    left: 0;
+    right: 0;    
 }
 
 /* special offers home page */

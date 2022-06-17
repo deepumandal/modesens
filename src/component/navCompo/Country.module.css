@@ -1,11 +1,11 @@
 .Country{
-    width: 276px;
+    width: 220px;
     height: 280px;
     /* border: 1px solid red; */
     position: fixed;
-    top: 39px;
+    top: 45px;
     background-color: white;
-    right: 212px;
+    right: 196px;
     z-index: 100;
     padding: 20px;
     

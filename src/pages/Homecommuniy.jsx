@@ -36,8 +36,8 @@ const Homecommuniy = () => {
   return (
     <div className="container">
     <OwlCarousel className="owl-theme" items="4" nav loop>
-{ data.map((e)=>(
-  <div key={e.id} className="item"
+{ data.map((e,i)=>(
+  <div key={i} className="item"
   style={{
     // border: "1px solid red",
     
