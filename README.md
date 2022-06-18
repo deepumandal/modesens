@@ -20,6 +20,8 @@ Our Team includes.
 
 In this project we have made use of React library to create an interactive UI. 
 
+Chakra UI, BootStrap are some additional CSS library used in our project to provide a pleasant viewing experience to our users.
+
 Deployment Link:https://magnificent-bublanina-64e24e.netlify.app/
 
 Medium blog link:https://medium.com/@victor20sara20/project-on-clone-of-modesens-a110c4d5394c
