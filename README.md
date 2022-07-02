@@ -56,7 +56,7 @@ Contributions
 
 <b>Gagan Chandan</b>
 
-1. In This project i have contributed in Login and SignUp part.
+1. In This project I have contributed in Login and SignUp part.
 
    I have used React JS for overcoming this.
 
@@ -70,7 +70,7 @@ Contributions
 
 2. I made use of React library to build the UI of this page. All the state variables were managed with the use of redux.
 
-3. In the CSS part I have made use of the Chakra UI library other than the vanilla CSS.
+3. For styling I have made use of the Chakra UI library and  vanilla CSS.
 
 4.  To fetch data from the local server I have made use of Axios. To get data for the men’s page I also scrapped the data from the original website .
 
