@@ -1,165 +1,127 @@
 import React from "react";
-import Carousel from "react-bootstrap/Carousel";
 import cx from "classnames";
 import Partners from "../styles.module/HomePartners.module.css";
+import {
+  Box,
+  Grid,
+  GridItem,
+  Heading,
+  Image,
+  SimpleGrid,
+  VStack,
+} from "@chakra-ui/react";
+import ReactOwlCarousel from "react-owl-carousel";
 
 const HomePartners = () => {
+  let imposter1 = [
+    "https://cdn.modesens.com/banner/20211014-24S-logo.png",
+    "https://cdn.modesens.com/banner/20211014-BALENCIAGA-logo.png",
+    "https://cdn.modesens.com/banner/20211014-BOTTEGA-VENETA-logo.png",
+    "https://cdn.modesens.com/banner/20211014-BURBERRY-logo.png",
+    "https://cdn.modesens.com/banner/20211014-FARFETCH-logo.png",
+    "https://cdn.modesens.com/banner/20211014-FENDI-logo.png",
+    "https://cdn.modesens.com/banner/20211014-FWRD-logo.png",
+    "https://cdn.modesens.com/banner/20211014-GIVENCHY-logo.png",
+    "https://cdn.modesens.com/banner/20211014-GUCCI-logo.png",
+    "https://cdn.modesens.com/banner/20211014-FARFETCH-logo.png",
+    "https://cdn.modesens.com/banner/20211014-LOEWE-logo.png",
+    "https://cdn.modesens.com/banner/20211014-LUISAVIAROMA-logo.png",
+  ];
+  let imposter2 = [
+    "https://cdn.modesens.com/banner/20211014-MATCHESFASHION-logo.png",
+    "https://cdn.modesens.com/banner/20211014-MR-PORTER-logo.png",
+    "https://cdn.modesens.com/banner/20211014-NET-A-PORTER-logo.png",
+    "https://cdn.modesens.com/banner/20211014-NORDSTROM-logo.png",
+    "https://cdn.modesens.com/banner/20211014-PRADA-logo.png",
+    "https://cdn.modesens.com/banner/20211014-SAINT-LAURENT-logo.png",
+    "https://cdn.modesens.com/banner/20211014-SAKS-FIFTH-AVENUE-logo.png",
+    "https://cdn.modesens.com/banner/20211014-SHOPBOP-logo.png",
+    "https://cdn.modesens.com/banner/20211014-GUCCI-logo.png",
+    "https://cdn.modesens.com/banner/20211014-SSENSE-logo.png",
+    "https://cdn.modesens.com/banner/20211014-VALENTINO-logo.png",
+    "https://cdn.modesens.com/banner/20211014-VERSACE-logo.png",
+  ];
   return (
-    <div> 
-      <h3 style={{
-        fontSize : "24px",
-        fontWeight :600,
-        letterSpacing :  "1px",
-        color : "#1c1c1c"
-      }}>HomePartners</h3>
+    <VStack>
+      <Heading
+        sx={{
+          fontSize: "24px",
+          fontWeight: 600,
+          letterSpacing: "1px",
+          color: "#1c1c1c",
+        }}
+      >
+        HomePartners
+      </Heading>
       <br />
-      <h4 style={{
-        fontSize : "20px",
-        fontWeight : 400,
-        color : "#6c757d"
-        
-      }}>
-        Compare across our 500+ partner stores to find the products you want at the best price.</h4>
-      
-      <div className="container">
-        <img className={Partners.controlleft} src="https://modesens.com/static/img/20180905overlay_left_arrow_b.svg" alt="" />
-        <Carousel>
-          <Carousel.Item>
-            <div className={Partners.boxs}>
-              {/* imges here */}
-              <img
-                className={cx("d-block w-100", Partners.img)}
-                src="https://cdn.modesens.com/banner/20211014-24S-logo.png"
-                alt="Second slide"
-              />
-              <img
-                className={cx("d-block w-100", Partners.img)}
-                src="https://cdn.modesens.com/banner/20211014-BALENCIAGA-logo.png"
-                alt="Second slide"
-              />
-              <img
-                className={cx("d-block w-100", Partners.img)}
-                src="https://cdn.modesens.com/banner/20211014-BOTTEGA-VENETA-logo.png"
-                alt="Second slide"
-              />
-              <img
-                className={cx("d-block w-100", Partners.img)}
-                src="https://cdn.modesens.com/banner/20211014-BURBERRY-logo.png"
-                alt="Second slide"
-              />
-              <img
-                className={cx("d-block w-100", Partners.img)}
-                src="https://cdn.modesens.com/banner/20211014-FARFETCH-logo.png"
-                alt="Second slide"
-              />
-              <img
-                className={cx("d-block w-100", Partners.img)}
-                src="https://cdn.modesens.com/banner/20211014-FENDI-logo.png"
-                alt="Second slide"
-              />
-              <img
-                className={cx("d-block w-100", Partners.img)}
-                src="https://cdn.modesens.com/banner/20211014-FWRD-logo.png"
-                alt="Second slide"
-              />
-              <img
-                className={cx("d-block w-100", Partners.img)}
-                src="https://cdn.modesens.com/banner/20211014-GIVENCHY-logo.png"
-                alt="Second slide"
-              />
-              <img
-                className={cx("d-block w-100", Partners.img)}
-                src="https://cdn.modesens.com/banner/20211014-GUCCI-logo.png"
-                alt="Second slide"
-              />
-              <img
-                className={cx("d-block w-100", Partners.img)}
-                src="https://cdn.modesens.com/banner/20211014-FARFETCH-logo.png"
-                alt="Second565e"
-              />
-              <img
-                className={cx("d-block w-100", Partners.img)}
-                src="https://cdn.modesens.com/banner/20211014-LOEWE-logo.png"
-                alt="Second slide"
-              />
-              <img
-                className={cx("d-block w-100", Partners.img)}
-                src="https://cdn.modesens.com/banner/20211014-LUISAVIAROMA-logo.png"
-                alt="Second slide"
-              />
-            </div>
-          </Carousel.Item>
-          <Carousel.Item>
-          <div className={Partners.boxs}>
+      <Heading
+        sx={{
+          fontSize: "20px",
+          fontWeight: 400,
+          // color: "#6c757d",
+        }}
+      >
+        Compare across our 500+ partner stores to find the products you want at
+        the best price.
+      </Heading>
 
-         
-          <img
-                className={cx("d-block w-100", Partners.img)}
-                src="https://cdn.modesens.com/banner/20211014-MATCHESFASHION-logo.png"
-                alt="Second slide"
-              />
-              <img
-                className={cx("d-block w-100", Partners.img)}
-                src="https://cdn.modesens.com/banner/20211014-MR-PORTER-logo.png"
-                alt="Second slide"
-              />
-              <img
-                className={cx("d-block w-100", Partners.img)}
-                src="https://cdn.modesens.com/banner/20211014-NET-A-PORTER-logo.png"
-                alt="Second slide"
-              />
-              <img
-                className={cx("d-block w-100", Partners.img)}
-                src="https://cdn.modesens.com/banner/20211014-NORDSTROM-logo.png"
-                alt="Second slide"
-              />
-              <img
-                className={cx("d-block w-100", Partners.img)}
-                src="https://cdn.modesens.com/banner/20211014-PRADA-logo.png"
-                alt="Second slide"
-              />
-              <img
-                className={cx("d-block w-100", Partners.img)}
-                src="https://cdn.modesens.com/banner/20211014-SAINT-LAURENT-logo.png"
-                alt="Second slide"
-              />
-              <img
-                className={cx("d-block w-100", Partners.img)}
-                src="https://cdn.modesens.com/banner/20211014-SAKS-FIFTH-AVENUE-logo.png"
-                alt="Second slide"
-              />
-              <img
-                className={cx("d-block w-100", Partners.img)}
-                src="https://cdn.modesens.com/banner/20211014-SHOPBOP-logo.png"
-                alt="Second slide"
-              />
-              <img
-                className={cx("d-block w-100", Partners.img)}
-                src="https://cdn.modesens.com/banner/20211014-GUCCI-logo.png"
-                alt="Second slide"
-              />
-              <img
-                className={cx("d-block w-100", Partners.img)}
-                src="https://cdn.modesens.com/banner/20211014-SSENSE-logo.png"
-                alt="5"
-              />
-              <img
-                className={cx("d-block w-100", Partners.img)}
-                src="https://cdn.modesens.com/banner/20211014-VALENTINO-logo.png"
-                alt="Second slide"
-              />
-              <img
-                className={cx("d-block w-100", Partners.img)}
-                src="https://cdn.modesens.com/banner/20211014-VERSACE-logo.png"
-                alt="Second slide"
-              />
-               </div>
-          </Carousel.Item>
-        </Carousel>
-        <img className={Partners.controlright} src="https://modesens.com/static/img/20180905overlay_right_arrow_b.svg" alt="" />
-       
-      </div>
-    </div>
+      <Box
+        // border={"1px solid red"}
+        maxW={"1400px"}
+        w={{
+          base: "100%",
+          md: "100%",
+          lg: "1000px",
+          xl: "1200px",
+          "2xl": "1400px",
+        }}
+        margin={"auto"}
+      >
+        <ReactOwlCarousel
+          autoplay
+          autoplaySpeed={1000}
+          className="  slider index-3 "
+          dots={false}
+          items={1}
+          loop={true}
+        >
+          <SimpleGrid columns={{
+            base : 3,
+            sm : 6
+          }} justifyContent={"space-between"} gap={"20px"}>
+            {imposter1.map((imposter, index) => {
+              return (
+                <GridItem key={index} margin={"auto"}>
+                  <Image
+                    src={imposter}
+                    sizes="10px"
+                    cursor={"pointer"}
+                    alt="Second slide"
+                  />
+                </GridItem>
+              );
+            })}
+          </SimpleGrid>
+          <SimpleGrid columns={{
+            base : 3,
+            sm : 6
+          }} justifyContent={"space-between"} gap={"20px"}>
+            {imposter2.map((imposter, index) => {
+              return (
+                <GridItem key={index} margin={"auto"}>
+                  <Image
+                    src={imposter}
+                    sizes="10px"
+                    cursor={"pointer"}
+                    alt="Second slide"
+                  />
+                </GridItem>
+              );
+            })}
+          </SimpleGrid>
+        </ReactOwlCarousel>
+      </Box>
+    </VStack>
   );
 };
 
