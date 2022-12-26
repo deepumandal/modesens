@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/modesens/static/css/main.70378504.css",
+    "main.js": "/modesens/static/js/main.e7230c6c.js",
+    "static/js/787.be58c9f6.chunk.js": "/modesens/static/js/787.be58c9f6.chunk.js",
+    "static/media/logo.svg": "/modesens/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/modesens/index.html",
+    "main.70378504.css.map": "/modesens/static/css/main.70378504.css.map",
+    "main.e7230c6c.js.map": "/modesens/static/js/main.e7230c6c.js.map",
+    "787.be58c9f6.chunk.js.map": "/modesens/static/js/787.be58c9f6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.70378504.css",
+    "static/js/main.e7230c6c.js"
+  ]
+}
