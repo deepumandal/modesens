@@ -104,7 +104,7 @@ Contributions
 
 5. I have given my best to build the part of website assigned to me. Also, my teammates were helpful and Hope work with them in other projects.
 
-Deployment Link:https://magnificent-bublanina-64e24e.netlify.app/
+Deployment Link:https://modesen.netlify.app/
 
 (Please install node modules and host the data on port 8080 of your local machine to see the  data.)
 
