@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import OwlCarousel from "react-owl-carousel";
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
+// import OwlCarousel from "react-owl-carousel";
+
 import style from "../styles.module/NavbarTrending.module.css";
 import axios from "axios";
-import { VStack } from "@chakra-ui/react";
+import { Box, HStack, VStack } from "@chakra-ui/react";
+import { Carousel } from "react-bootstrap";
 const HomeRecentviwe = () => {
   const [data, setData] = useState([]);
   const [render, setrender] = useState(true);
@@ -33,7 +33,64 @@ const HomeRecentviwe = () => {
       gap={4}
       p={6}
     >
-      <OwlCarousel className="owl-theme" items="4" dots={false} loop>
+        <Box w={{
+          base : "90%"
+        }} m={"auto"}>
+        <Carousel indicators={false} >
+        {data.map((e, index) => {
+          return (
+            <Carousel.Item key={index}>
+              <HStack  p={5} 
+               maxW={"1400px"}
+               w={{
+                 base: "100%",
+                 md: "100%",
+                 lg: "900px",
+                 xl: "1200px",
+                 "2xl": "1400px",
+               }}
+              justifyContent={"space-evenly"}
+              >
+                {data[index].map((item, i) => {
+                  return (
+                    <div
+                      key={item.id}
+                      style={{
+                        // border: "1px solid red",
+
+                        boxShadow: "rgba(0, 0, 0, 0.16) 0px 1px 4px",
+                        display: "flex",
+                        justifyContent: "center",
+                        flexDirection: "column",
+                        margin: "10px",
+                        padding: "10px",
+                        height: "360px",
+                      }}
+                    >
+                        <img
+                          className={style.imgspoffers}
+                          src={item.img}
+                          alt=""
+                        />
+
+                      <div className={style.name}> {item.name} </div>
+                      <div className={style.about}> {item.about} </div>
+                      <div className={style.PriceRange}>
+                        {" "}
+                        {item.PriceRange}{" "}
+                      </div>
+                      <div className={style.store}> {item.store} </div>
+                    </div>
+                  );
+                })}
+              </HStack>
+            </Carousel.Item>
+          );
+        })}
+      </Carousel>
+        </Box>
+
+      {/* <OwlCarousel className="owl-theme" items="4" dots={false} loop>
         {data.map((e) => (
           <div
             key={e.id}
@@ -57,7 +114,7 @@ const HomeRecentviwe = () => {
         ))}
 
      
-      </OwlCarousel>
+      </OwlCarousel> */}
 
       <button
         className={style.button}

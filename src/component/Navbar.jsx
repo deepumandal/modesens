@@ -1,37 +1,27 @@
 import React, { useEffect, useState } from "react";
 import utility from "../styles.module/utility.module.css";
 import style from "../styles.module/Navbar.module.css";
-import cx from "classnames";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import Country from "./navCompo/Country";
-import Loginmouseover from "./navCompo/Loginmouseover";
 import "../pages/login.css";
 import { useDisclosure, Box, HStack, Image, Text } from "@chakra-ui/react";
 import { useMediaQuery } from "@chakra-ui/react";
+import Login from "../pages/Login";
+import { Logoutapi } from "../store/Login/auth.action";
 
 const Navbar = () => {
   const navigate = useNavigate();
 
-  // navbar api fetch here
   const [ismobilescreen] = useMediaQuery(`(max-width: 820px)`);
-  // console.log(ismobilescreen)
-  const { err, isAuth } = useSelector((state) => state.auth);
 
-  useEffect(() => {
-    if (isAuth) {
-      onClose();
-    }
-  }, [isAuth]);
+  const { isAuth } = useSelector((state) => state.auth);
+  const dispatch = useDispatch();
 
-  const { onOpen, onClose } = useDisclosure();
+  console.log("isAuth", isAuth);
 
   const [country, setcountry] = useState(false);
-  const [Loginmouse, setLoginmouse] = useState(false);
-  // console.log(country);
-  // useEffect(() => {
-  //   console.log(country);
-  // }, []);
+
   return (
     <Box w={"100%"}>
       <HStack
@@ -62,63 +52,63 @@ const Navbar = () => {
             <HStack justifyContent={"center"} gap={"10px"}>
               <Text
                 name={"WOMEN"}
-                className={cx(style.subcateg, utility.cursurhover)}
+                className={style.subcateg}
                 onClick={() => navigate("/shop-women-clothing")}
               >
                 WOMEN
               </Text>
               <Text
                 name={"MEN"}
-                className={cx(style.subcateg, utility.cursurhover)}
+                className={style.subcateg}
                 onClick={() => navigate("/shop-men-clothing")}
               >
                 MEN
               </Text>
               <Text
                 name={"BEAUTY"}
-                className={cx(style.subcateg, utility.cursurhover)}
+                className={style.subcateg}
                 onClick={() => navigate("/beauty")}
               >
                 BEAUTY
               </Text>
               <Text
                 name={"KIDS"}
-                className={cx(style.subcateg, utility.cursurhover)}
+                className={style.subcateg}
                 onClick={() => navigate("/kids")}
               >
                 KIDS
               </Text>
               <Text
                 name={"HOME"}
-                className={cx(style.subcateg, utility.cursurhover)}
+                className={style.subcateg}
                 onClick={() => navigate("/")}
               >
                 HOME
               </Text>
               <Text
                 name={"OFFERS"}
-                className={cx(style.subcateg, utility.cursurhover)}
+                className={style.subcateg}
                 onClick={() => navigate("/offers")}
               >
                 OFFERS
               </Text>
               <Text
                 name={"DESIGNERS"}
-                className={cx(style.subcateg, utility.cursurhover)}
+                className={style.subcateg}
                 onClick={() => navigate("/designers")}
               >
                 DESIGNERS
               </Text>
               <Text
                 name={"COMMUNITY"}
-                className={cx(style.subcateg, utility.cursurhover)}
+                className={style.subcateg}
                 onClick={() => navigate("/community")}
               >
                 COMMUNITY
               </Text>
               <Text
                 name={"WHY"}
-                className={cx(style.subcateg, utility.cursurhover)}
+                className={style.subcateg}
                 onClick={() => navigate("/why")}
               >
                 WHY MODESENS
@@ -136,23 +126,17 @@ const Navbar = () => {
           />
 
           <Image
-            className={cx(style.rightsubcateg, utility.cursurhover)}
+            className={style.rightsubcateg}
             src="https://cdn.modesens.com/static/img/20200612shopping_bag2.svg"
             alt=""
           />
-          {Loginmouse ? (
-            <Loginmouseover
-              setLoginmouse={setLoginmouse}
-              Loginmouse={Loginmouse}
-              onOpen={onOpen}
-            />
-          ) : null}
-          <Image
-            onMouseEnter={() => setLoginmouse(true)}
-            src="https://cdn.modesens.com/static/img/20200612account_b2.svg"
-            alt=""
-            onClick={onOpen}
-          />
+          <Box>
+            {isAuth ? (
+              <Text onClick={() => dispatch(Logoutapi())}>Logout</Text>
+            ) : (
+              <Login> Login</Login>
+            )}
+          </Box>
 
           <HStack
             style={{

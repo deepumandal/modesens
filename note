@@ -1,6 +1,0 @@
-
-npm install classnames --save
-npm i react-router-dom
-npm i axios redux redux-thunk react-redux
-npm i react-owl-carousel
-npm install react-bootstrap bootstrap

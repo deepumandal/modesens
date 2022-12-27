@@ -13,7 +13,7 @@
     width:20%;
     height:auto;
   
-    margin-left: 1%;
+       margin-left: 1%;
 }
 
 .prprodcontainer
@@ -153,7 +153,7 @@
 .prdesignerdiv{
     width:60%;
     text-align:start;
-    margin-left:22%;
+       margin-left:22%;
     height:100px;
     line-height:50px
 }
@@ -172,7 +172,7 @@
 }
 .prpaginate
 {
-    margin-Left:50%;
+       margin-left:50%;
     display:flex
 }
 
@@ -189,7 +189,7 @@
     
  }
  .prselectdiv{
-   margin-left:22%
+      margin-left:22%
  }
 .prselect{
     text-align:end;
@@ -254,7 +254,7 @@
 .prdesignerdiv{
     width:75%;
     text-align:start;
-    margin-left:22%;
+       margin-left:22%;
     height:100px;
     line-height:50px;
  
@@ -268,7 +268,7 @@
     margin:auto;
 }
 .prselectdiv{
-    margin-left:20%
+       margin-left:20%
   }
 
   .prindiprop
@@ -294,7 +294,7 @@
 .prdesignerdiv{
     width:60%;
     text-align:start;
-    margin-left:22%;
+       margin-left:22%;
     height:100px;
     line-height:50px;
    

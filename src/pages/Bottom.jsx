@@ -38,7 +38,7 @@ const Bottom = () => {
         justifyContent={"center"}
         maxW={"1400px"}
         w={{
-          base: "100%",
+          base: "90%",
           md: "100%",
           lg: "1000px",
           xl: "1200px",

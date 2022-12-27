@@ -1,5 +1,5 @@
 import React from "react";
-import cx from "classnames";
+// import cx from "classnames";
 import Partners from "../styles.module/HomePartners.module.css";
 import {
   Box,
@@ -10,7 +10,8 @@ import {
   SimpleGrid,
   VStack,
 } from "@chakra-ui/react";
-import ReactOwlCarousel from "react-owl-carousel";
+import { Carousel } from "react-bootstrap";
+// import ReactOwlCarousel from "react-owl-carousel";
 
 const HomePartners = () => {
   let imposter1 = [
@@ -69,7 +70,7 @@ const HomePartners = () => {
         // border={"1px solid red"}
         maxW={"1400px"}
         w={{
-          base: "100%",
+          base: "90%",
           md: "100%",
           lg: "1000px",
           xl: "1200px",
@@ -77,49 +78,54 @@ const HomePartners = () => {
         }}
         margin={"auto"}
       >
-        <ReactOwlCarousel
-          autoplay
-          autoplaySpeed={1000}
-          className="  slider index-3 "
-          dots={false}
-          items={1}
-          loop={true}
-        >
-          <SimpleGrid columns={{
-            base : 3,
-            sm : 6
-          }} justifyContent={"space-between"} gap={"20px"}>
-            {imposter1.map((imposter, index) => {
-              return (
-                <GridItem key={index} margin={"auto"}>
-                  <Image
-                    src={imposter}
-                    sizes="10px"
-                    cursor={"pointer"}
-                    alt="Second slide"
-                  />
-                </GridItem>
-              );
-            })}
-          </SimpleGrid>
-          <SimpleGrid columns={{
-            base : 3,
-            sm : 6
-          }} justifyContent={"space-between"} gap={"20px"}>
-            {imposter2.map((imposter, index) => {
-              return (
-                <GridItem key={index} margin={"auto"}>
-                  <Image
-                    src={imposter}
-                    sizes="10px"
-                    cursor={"pointer"}
-                    alt="Second slide"
-                  />
-                </GridItem>
-              );
-            })}
-          </SimpleGrid>
-        </ReactOwlCarousel>
+        <Carousel indicators={false}>
+          <Carousel.Item>
+            <SimpleGrid
+              columns={{
+                base: 3,
+                sm: 6,
+              }}
+              justifyContent={"space-between"}
+              gap={"20px"}
+            >
+              {imposter1.map((imposter, index) => {
+                return (
+                  <GridItem key={index} margin={"auto"}>
+                    <Image
+                      src={imposter}
+                      sizes="10px"
+                      cursor={"pointer"}
+                      alt="Second slide"
+                    />
+                  </GridItem>
+                );
+              })}
+            </SimpleGrid>
+          </Carousel.Item>
+          <Carousel.Item>
+            <SimpleGrid
+              columns={{
+                base: 3,
+                sm: 6,
+              }}
+              justifyContent={"space-between"}
+              gap={"20px"}
+            >
+              {imposter2.map((imposter, index) => {
+                return (
+                  <GridItem key={index} margin={"auto"}>
+                    <Image
+                      src={imposter}
+                      sizes="10px"
+                      cursor={"pointer"}
+                      alt="Second slide"
+                    />
+                  </GridItem>
+                );
+              })}
+            </SimpleGrid>
+          </Carousel.Item>
+        </Carousel>
       </Box>
     </VStack>
   );

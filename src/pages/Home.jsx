@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import Banner from "./Banner";
 import HomePartners from "./HomePartners";
 import styles from "../styles.module/home.module.css";
@@ -7,8 +7,7 @@ import HomeTrending from "./HomeTrending";
 import HomeRecentviwe from "./HomeRecentviwe";
 import Homecommuniy from "./Homecommuniy";
 import Bottom from "./Bottom";
-import OwlCarousel from "react-owl-carousel";
-import { Heading } from "@chakra-ui/react";
+
 
 const Home = () => {
   return (
@@ -72,4 +71,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default memo(Home)

@@ -33,6 +33,7 @@ const Login = ({ setLoginmouse, children }) => {
   const handleSignup = (e) => {
     e.preventDefault();
     dispatch(SignupApi(logindata));
+    onClose()
   };
   const handleLogin = (e) => {
     e.preventDefault();

@@ -14,6 +14,10 @@ export const SignupApi=(data)=>(dispatch)=>
 }
 
 
+export const check =() => (dispatch)=>{
+   dispatch({type:"check"})
+}
+
 
 export const LoginApi=(data)=>(dispatch)=>
 {
@@ -24,4 +28,8 @@ export const LoginApi=(data)=>(dispatch)=>
      })
      .then((res)=>dispatch({type:Login_S,payload:res.data}))
      .catch(()=>dispatch({type:Login_E}))
+}
+
+export const Logoutapi = () => (dispatch)=>{
+   dispatch({type : "Logout"})
 }

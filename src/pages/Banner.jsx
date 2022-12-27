@@ -1,7 +1,7 @@
-import OwlCarousel from "react-owl-carousel";
 import Slide from "../component/Slide";
-import React from "react";
-import { Box } from "@chakra-ui/react";
+import React, { memo } from "react";
+import { Box, Text } from "@chakra-ui/react";
+import { Carousel } from "react-bootstrap";
 
 function Banner() {
   let poster = [
@@ -20,7 +20,7 @@ function Banner() {
       // border={"1px solid red"}
       maxW={"1400px"}
       w={{
-        base: "100%",
+        base: "90%",
         md: "100%",
         lg: "1000px",
         xl: "1200px",
@@ -28,28 +28,20 @@ function Banner() {
       }}
       margin={"auto"}
     >
-      <OwlCarousel
-        autoplay
-        autoplaySpeed={1000}
-        className="  slider index-3 "
-        dots={false}
-        items={1}
-        loop={true}
-      >
+      <Carousel indicators={false}>
         {poster.map((img, index) => {
           return (
-            <Slide
-              img={img}
-              key={index}
-              total={poster.length}
-              page={index + 1}
-              loop
-            />
+            <Carousel.Item key={index}>
+              <img className="d-block w-100" src={img} alt="First slide" />
+              <Text position={"relative"} right={"30px"} bottom={"30px"}>
+                {`${index + 1}/${poster.length}`}{" "}
+              </Text>
+            </Carousel.Item>
           );
         })}
-      </OwlCarousel>
+      </Carousel>
     </Box>
   );
 }
 
-export default Banner;
+export default memo(Banner);

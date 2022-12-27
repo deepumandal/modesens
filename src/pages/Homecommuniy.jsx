@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from "react";
-import OwlCarousel from "react-owl-carousel";
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
 import style from "../styles.module/NavbarTrending.module.css";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import { VStack } from "@chakra-ui/react";
+import { HStack, Image, VStack } from "@chakra-ui/react";
+import { Carousel } from "react-bootstrap";
 
 const Homecommuniy = () => {
   const [data, setData] = useState([]);
@@ -25,7 +23,7 @@ const Homecommuniy = () => {
     <VStack
       maxW={"1400px"}
       w={{
-        base: "100%",
+        base: "90%",
         md: "100%",
         lg: "1000px",
         xl: "1200px",
@@ -35,25 +33,53 @@ const Homecommuniy = () => {
       gap={4}
       p={6}
     >
-      <OwlCarousel className="owl-theme" items="4" nav={false} dots={false} loop>
-        {data.map((e, i) => (
-          <div
-            key={i}
-            className="item"
-            style={{
-              boxShadow: "rgba(0, 0, 0, 0.16) 0px 1px 4px",
-              display: "flex",
-              justifyContent: "center",
-              flexDirection: "column",
-              margin: "10px",
-            }}
-          >
-            <Link to="/community">
-              <img className={style.imgspoffers} src={e.img} alt="" />
-            </Link>
-          </div>
-        ))}
-      </OwlCarousel>
+      <Carousel indicators={false}>
+        {data.map((e, index) => {
+          return (<Carousel.Item key={index}>
+              <HStack  p={5} 
+               maxW={"1400px"}
+               w={{
+                 base: "100%",
+                 md: "100%",
+                 lg: "900px",
+                 xl: "1200px",
+                 "2xl": "1400px",
+               }}
+              justifyContent={"space-evenly"}
+              >
+                {data[index].map((item, i) => {
+                  return (
+                    <div
+                      key={i}
+                      style={{
+                        boxShadow: "rgba(0, 0, 0, 0.16) 0px 1px 4px",
+                        display: "flex",
+                        justifyContent: "center",
+                        flexDirection: "column",
+                        margin: "10px",
+                      
+                        height: "360px",
+                      }}
+                    >
+                      
+                        <Image h={"400px"}
+
+                          
+                          src={item.img}
+                          alt=""
+                        />
+                      
+                    </div>
+                  );
+                })}
+              </HStack>
+            </Carousel.Item>
+          );
+        })}
+      </Carousel>
+
+
+    
 
       <button
         className={style.button}
